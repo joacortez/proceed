@@ -36,6 +36,7 @@ export function generateStartFormFileName(): string;
  */
 export function generateUserTaskFileName(): string;
 export function generateScriptTaskFileName(): string;
+export function generateServiceTaskFileName(): string;
 /**
  * Return the string for the 'implementation' attribute in a UserTask
  * @returns {String} URL of the HTML spec

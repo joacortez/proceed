@@ -15,6 +15,8 @@ export const mSConfigEnvironmentOnlyKeys = [
   'NODE_ENV',
   'IAM_MS_ADMIN_INITIAL_PASSWORD',
 
+  'NODERED_URL',
+
   'PROCEED_PUBLIC_MAILSERVER_ACTIVE',
 
   'PROCEED_PUBLIC_IAM_ACTIVE',
@@ -63,6 +65,20 @@ export const msConfigSchema = {
     PROCEED_PUBLIC_CONFIG_SERVER_ACTIVE: z.string().default('FALSE').transform(boolParser),
 
     NODE_ENV: z.enum(['development', 'production', 'test']).default('development'),
+
+    NODERED_URL: z
+      .string()
+      .optional()
+      .default('')
+      .refine((url: string) => {
+        if (url === '') return true;
+        try {
+          new URL(url);
+          return true;
+        } catch {
+          return false;
+        }
+      }, 'NODERED_URL must be a valid URL.'),
 
     NEXTAUTH_URL: z
       .string()
@@ -221,8 +237,8 @@ export const msConfigConfigurableKeys = Object.keys(mergedMSConfigSchemaKeys).fi
 export type PrivateMSConfig = z.infer<typeof environmentSpecificMSConfigSchema>;
 export type PublicMSConfig = {
   [K in keyof PrivateMSConfig as K extends `PROCEED_PUBLIC_${string}`
-    ? K
-    : never]: PrivateMSConfig[K];
+  ? K
+  : never]: PrivateMSConfig[K];
 };
 
 export type EnvironmentOnlyMSConfig = Pick<

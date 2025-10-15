@@ -670,6 +670,23 @@ export const getProcessScriptTaskData = async (
   }
 };
 
+export const getProcessServiceTaskData = async (
+  definitionId: string,
+  taskFileName: string,
+  fileExtension: 'js' | 'ts' | 'xml',
+  spaceId: string,
+) => {
+  const error = await checkValidity(definitionId, 'view', spaceId);
+
+  if (error) return error;
+
+  try {
+    return await _getProcessScriptTaskScript(definitionId, `${taskFileName}.${fileExtension}`);
+  } catch (err) {
+    return userError('Unable to get the requested Service Task data.', UserErrorType.NotFoundError);
+  }
+};
+
 export const saveProcessScriptTask = async (
   definitionId: string,
   taskFileName: string,

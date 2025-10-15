@@ -19,6 +19,7 @@ declare const _exports: {
   generateStartFormFileName(): string;
   generateUserTaskFileName(): string;
   generateScriptTaskFileName(): string;
+  generateServiceTaskFileName(): string;
   getUserTaskImplementationString(): string;
   generateTargetNamespace(id: any): string;
   initXml(processId?: any, startEventId?: string): string;

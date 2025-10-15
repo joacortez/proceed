@@ -30,6 +30,7 @@ import { generateSharedViewerUrl } from '@/lib/sharing/process-sharing';
 import { isUserErrorResponse } from '@/lib/user-error';
 import UserTaskBuilder, { canHaveForm } from './_user-task-builder';
 import ScriptEditor from '@/app/(dashboard)/[environmentId]/processes/[processId]/script-editor';
+import ServiceTaskEditor from '@/app/(dashboard)/[environmentId]/processes/[processId]/service-task-editor';
 import useTimelineViewStore from '@/lib/use-timeline-view-store';
 import { handleOpenDocumentation } from '../processes-helper';
 import { EnvVarsContext } from '@/components/env-vars-context';
@@ -60,6 +61,7 @@ const ModelerToolbar = ({ process, canRedo, canUndo, versionName }: ModelerToolb
 
   const [showPropertiesPanel, setShowPropertiesPanel] = useState(false);
   const [showScriptTaskEditor, setShowScriptTaskEditor] = useState(false);
+  const [showServiceTaskEditor, setShowServiceTaskEditor] = useState(false);
   const [showFlowNodeConditionModal, setShowFlowNodeConditionModal] = useState(false);
 
   const [shareModalOpen, setShareModalOpen] = useState(false);
@@ -134,6 +136,7 @@ const ModelerToolbar = ({ process, canRedo, canUndo, versionName }: ModelerToolb
     showUserTaskEditor ||
     showPropertiesPanel ||
     showScriptTaskEditor ||
+    showServiceTaskEditor ||
     shareModalOpen ||
     !!xmlEditorBpmn;
 
@@ -346,6 +349,15 @@ const ModelerToolbar = ({ process, canRedo, canUndo, versionName }: ModelerToolb
                     </Tooltip>
                   )) ||
                 (env.PROCEED_PUBLIC_PROCESS_AUTOMATION_ACTIVE &&
+                  bpmnIs(selectedElement, 'bpmn:ServiceTask') && (
+                    <Tooltip title="Edit Service Task">
+                      <Button
+                        icon={<FormOutlined />}
+                        onClick={() => setShowServiceTaskEditor(true)}
+                      />
+                    </Tooltip>
+                  )) ||
+                (env.PROCEED_PUBLIC_PROCESS_AUTOMATION_ACTIVE &&
                   isConditionalFlow(selectedElement) && (
                     <Tooltip title="Edit Condition">
                       <Button
@@ -460,6 +472,13 @@ const ModelerToolbar = ({ process, canRedo, canUndo, versionName }: ModelerToolb
             processId={processId}
             open={showScriptTaskEditor}
             onClose={() => setShowScriptTaskEditor(false)}
+            selectedElement={selectedElement}
+          />
+
+          <ServiceTaskEditor
+            processId={processId}
+            open={showServiceTaskEditor}
+            onClose={() => setShowServiceTaskEditor(false)}
             selectedElement={selectedElement}
           />
 

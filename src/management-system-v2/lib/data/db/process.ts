@@ -121,7 +121,7 @@ export async function getProcess(processDefinitionsId: string, includeBPMN = fal
   };
 
   return convertedProcess as typeof convertedProcess & {
-    inEditingBy?: { id: string; task?: string }[];
+    inEditingBy?: { id: string; task?: string; }[];
   };
 }
 
@@ -170,7 +170,7 @@ export async function checkIfProcessAlreadyExistsForAUserInASpaceByName(
 }
 
 export async function checkIfProcessAlreadyExistsForAUserInASpaceByNameWithBatching(
-  processes: { name: string; folderId: string }[],
+  processes: { name: string; folderId: string; }[],
   spaceId: string,
   userId: string,
 ) {
@@ -208,7 +208,7 @@ export async function checkIfProcessAlreadyExistsForAUserInASpaceByNameWithBatch
 
 /** Handles adding a process, makes sure all necessary information gets parsed from bpmn */
 export async function addProcess(
-  processInput: ProcessServerInput & { bpmn: string },
+  processInput: ProcessServerInput & { bpmn: string; },
   referencedProcessId?: string,
   tx?: Prisma.TransactionClient,
 ): Promise<ProcessMetadata> {
@@ -308,7 +308,7 @@ export async function addProcess(
 /** Updates an existing process with the given bpmn */
 export async function updateProcess(
   processDefinitionsId: string,
-  newInfoInput: Partial<ProcessServerInput> & { bpmn?: string },
+  newInfoInput: Partial<ProcessServerInput> & { bpmn?: string; },
 ) {
   const { bpmn: newBpmn } = newInfoInput;
   const newInfo = ProcessServerInputSchema.partial().parse(newInfoInput);
@@ -758,6 +758,22 @@ export async function checkIfScriptTaskFileExists(
   } catch (error) {
     console.error('Error checking if script task file exists:', error);
     throw new Error('Failed to check if script task file exists.');
+  }
+}
+
+// TODO is this really necessary?
+export async function checkIfServiceTaskFileExists(
+  processDefinitionsId: string,
+  serviceTaskFilenameWithExtension: string,
+) {
+  try {
+    const artifact = await db.artifact.findUnique({
+      where: { fileName: serviceTaskFilenameWithExtension },
+    });
+    return artifact;
+  } catch (error) {
+    console.error('Error checking if service task file exists:', error);
+    throw new Error('Failed to check if service task file exists.');
   }
 }
 
