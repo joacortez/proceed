@@ -349,6 +349,7 @@ const ModelerToolbar = ({ process, canRedo, canUndo, versionName }: ModelerToolb
                     </Tooltip>
                   )) ||
                 (env.PROCEED_PUBLIC_PROCESS_AUTOMATION_ACTIVE &&
+                  env.PROCEED_PUBLIC_PROCESS_AUTOMATION_SERVICE_TASK_ACTIVE &&
                   bpmnIs(selectedElement, 'bpmn:ServiceTask') && (
                     <Tooltip title="Edit Service Task">
                       <Button
