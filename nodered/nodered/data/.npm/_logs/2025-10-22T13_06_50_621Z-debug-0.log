@@ -1,0 +1,699 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@10.8.2
+2 info using node@v20.19.0
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/usr/src/node-red/.npmrc
+5 silly config load:file:/usr/local/etc/npmrc
+6 verbose title npm install mqtt
+7 verbose argv "install" "mqtt"
+8 verbose logfile logs-max:10 dir:/data/.npm/_logs/2025-10-22T13_06_50_621Z-
+9 verbose logfile /data/.npm/_logs/2025-10-22T13_06_50_621Z-debug-0.log
+10 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+11 silly logfile start cleaning logs, removing 1 files
+12 silly logfile done cleaning log files
+13 silly idealTree buildDeps
+14 silly fetch manifest mqtt@*
+15 silly packumentCache full:https://registry.npmjs.org/mqtt cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/mqtt 234ms (cache revalidated)
+17 silly packumentCache full:https://registry.npmjs.org/mqtt set size:805874 disposed:false
+18 silly placeDep ROOT mqtt@5.14.1 REPLACE for: node-red-docker@4.0.9 want: *
+19 silly fetch manifest @types/readable-stream@^4.0.21
+20 silly packumentCache full:https://registry.npmjs.org/@types%2freadable-stream cache-miss
+21 silly fetch manifest @types/ws@^8.18.1
+22 silly packumentCache full:https://registry.npmjs.org/@types%2fws cache-miss
+23 silly fetch manifest commist@^3.2.0
+24 silly packumentCache full:https://registry.npmjs.org/commist cache-miss
+25 silly fetch manifest concat-stream@^2.0.0
+26 silly packumentCache full:https://registry.npmjs.org/concat-stream cache-miss
+27 silly fetch manifest debug@^4.4.1
+28 silly packumentCache full:https://registry.npmjs.org/debug cache-miss
+29 silly fetch manifest help-me@^5.0.0
+30 silly packumentCache full:https://registry.npmjs.org/help-me cache-miss
+31 silly fetch manifest lru-cache@^10.4.3
+32 silly packumentCache full:https://registry.npmjs.org/lru-cache cache-miss
+33 http fetch GET 200 https://registry.npmjs.org/npm 540ms
+34 http fetch GET 200 https://registry.npmjs.org/concat-stream 199ms (cache revalidated)
+35 silly packumentCache full:https://registry.npmjs.org/concat-stream set size:63783 disposed:false
+36 silly fetch manifest mqtt-packet@^9.0.2
+37 silly packumentCache full:https://registry.npmjs.org/mqtt-packet cache-miss
+38 http fetch GET 200 https://registry.npmjs.org/@types%2freadable-stream 206ms (cache revalidated)
+39 silly packumentCache full:https://registry.npmjs.org/@types%2freadable-stream set size:77746 disposed:false
+40 silly fetch manifest number-allocator@^1.0.14
+41 silly packumentCache full:https://registry.npmjs.org/number-allocator cache-miss
+42 http fetch GET 200 https://registry.npmjs.org/@types%2fws 242ms (cache revalidated)
+43 silly packumentCache full:https://registry.npmjs.org/@types%2fws set size:167959 disposed:false
+44 silly fetch manifest readable-stream@^4.7.0
+45 silly packumentCache full:https://registry.npmjs.org/readable-stream cache-miss
+46 http fetch GET 200 https://registry.npmjs.org/debug 244ms (cache revalidated)
+47 silly packumentCache full:https://registry.npmjs.org/debug set size:195840 disposed:false
+48 silly fetch manifest socks@^2.8.6
+49 silly packumentCache full:https://registry.npmjs.org/socks cache-miss
+50 http fetch GET 200 https://registry.npmjs.org/lru-cache 248ms (cache revalidated)
+51 silly packumentCache full:https://registry.npmjs.org/lru-cache set size:400387 disposed:false
+52 silly fetch manifest split2@^4.2.0
+53 silly packumentCache full:https://registry.npmjs.org/split2 cache-miss
+54 http fetch GET 200 https://registry.npmjs.org/help-me 264ms (cache revalidated)
+55 silly packumentCache full:https://registry.npmjs.org/help-me set size:29897 disposed:false
+56 silly fetch manifest worker-timers@^8.0.23
+57 silly packumentCache full:https://registry.npmjs.org/worker-timers cache-miss
+58 http fetch GET 200 https://registry.npmjs.org/commist 321ms (cache revalidated)
+59 silly packumentCache full:https://registry.npmjs.org/commist set size:24560 disposed:false
+60 silly fetch manifest ws@^8.18.3
+61 silly packumentCache full:https://registry.npmjs.org/ws cache-miss
+62 http fetch GET 200 https://registry.npmjs.org/split2 135ms (cache revalidated)
+63 silly packumentCache full:https://registry.npmjs.org/split2 set size:47438 disposed:false
+64 http fetch GET 200 https://registry.npmjs.org/readable-stream 157ms (cache revalidated)
+65 silly packumentCache full:https://registry.npmjs.org/readable-stream set size:261096 disposed:false
+66 http fetch GET 200 https://registry.npmjs.org/number-allocator 210ms (cache revalidated)
+67 silly packumentCache full:https://registry.npmjs.org/number-allocator set size:45084 disposed:false
+68 http fetch GET 200 https://registry.npmjs.org/mqtt-packet 216ms (cache revalidated)
+69 silly packumentCache full:https://registry.npmjs.org/mqtt-packet set size:181823 disposed:false
+70 http fetch GET 200 https://registry.npmjs.org/socks 181ms (cache revalidated)
+71 silly packumentCache full:https://registry.npmjs.org/socks set size:168523 disposed:false
+72 http fetch GET 200 https://registry.npmjs.org/worker-timers 180ms (cache revalidated)
+73 silly packumentCache full:https://registry.npmjs.org/worker-timers set size:998336 disposed:false
+74 http fetch GET 200 https://registry.npmjs.org/ws 137ms (cache revalidated)
+75 silly packumentCache full:https://registry.npmjs.org/ws set size:410885 disposed:false
+76 silly fetch manifest mqtt@5.7.0
+77 silly packumentCache full:https://registry.npmjs.org/mqtt cache-hit
+78 silly placeDep node_modules/@node-red/nodes mqtt@5.7.0 OK for: @node-red/nodes@4.0.9 want: 5.7.0
+79 silly fetch manifest ws@^8.14.2
+80 silly packumentCache full:https://registry.npmjs.org/ws cache-hit
+81 silly fetch manifest debug@^4.3.4
+82 silly packumentCache full:https://registry.npmjs.org/debug cache-hit
+83 silly fetch manifest @types/ws@^8.5.9
+84 silly packumentCache full:https://registry.npmjs.org/@types%2fws cache-hit
+85 silly fetch manifest lru-cache@^10.0.1
+86 silly packumentCache full:https://registry.npmjs.org/lru-cache cache-hit
+87 silly fetch manifest reinterval@^1.1.0
+88 silly packumentCache full:https://registry.npmjs.org/reinterval cache-miss
+89 silly fetch manifest mqtt-packet@^9.0.0
+90 silly packumentCache full:https://registry.npmjs.org/mqtt-packet cache-hit
+91 silly fetch manifest worker-timers@^7.1.4
+92 silly packumentCache full:https://registry.npmjs.org/worker-timers cache-hit
+93 silly fetch manifest readable-stream@^4.4.2
+94 silly packumentCache full:https://registry.npmjs.org/readable-stream cache-hit
+95 silly fetch manifest @types/readable-stream@^4.0.5
+96 silly packumentCache full:https://registry.npmjs.org/@types%2freadable-stream cache-hit
+97 http fetch GET 200 https://registry.npmjs.org/reinterval 137ms (cache revalidated)
+98 silly packumentCache full:https://registry.npmjs.org/reinterval set size:8319 disposed:false
+99 silly fetch manifest bufferutil@^4.0.1
+100 silly packumentCache full:https://registry.npmjs.org/bufferutil cache-miss
+101 http fetch GET 200 https://registry.npmjs.org/bufferutil 118ms (cache revalidated)
+102 silly packumentCache full:https://registry.npmjs.org/bufferutil set size:51033 disposed:false
+103 silly fetch manifest utf-8-validate@>=5.0.2
+104 silly packumentCache full:https://registry.npmjs.org/utf-8-validate cache-miss
+105 http fetch GET 200 https://registry.npmjs.org/utf-8-validate 123ms (cache revalidated)
+106 silly packumentCache full:https://registry.npmjs.org/utf-8-validate set size:75205 disposed:false
+107 silly placeDep ROOT @types/readable-stream@4.0.21 OK for: mqtt@5.14.1 want: ^4.0.21
+108 silly placeDep ROOT @types/ws@8.18.1 OK for: mqtt@5.14.1 want: ^8.18.1
+109 silly placeDep ROOT commist@3.2.0 OK for: mqtt@5.14.1 want: ^3.2.0
+110 silly placeDep ROOT concat-stream@2.0.0 OK for: mqtt@5.14.1 want: ^2.0.0
+111 silly placeDep node_modules/mqtt debug@4.4.3 OK for: mqtt@5.14.1 want: ^4.4.1
+112 silly placeDep ROOT help-me@5.0.0 OK for: mqtt@5.14.1 want: ^5.0.0
+113 silly placeDep node_modules/mqtt lru-cache@10.4.3 OK for: mqtt@5.14.1 want: ^10.4.3
+114 silly placeDep ROOT mqtt-packet@9.0.2 OK for: mqtt@5.14.1 want: ^9.0.2
+115 silly placeDep ROOT number-allocator@1.0.14 OK for: mqtt@5.14.1 want: ^1.0.14
+116 silly placeDep ROOT readable-stream@4.7.0 OK for: mqtt@5.14.1 want: ^4.7.0
+117 silly placeDep ROOT socks@2.8.7 OK for: mqtt@5.14.1 want: ^2.8.6
+118 silly placeDep ROOT split2@4.2.0 OK for: mqtt@5.14.1 want: ^4.2.0
+119 silly placeDep ROOT worker-timers@8.0.25 OK for: mqtt@5.14.1 want: ^8.0.23
+120 silly placeDep node_modules/mqtt ws@8.18.3 OK for: mqtt@5.14.1 want: ^8.18.3
+121 silly fetch manifest @types/node@*
+122 silly packumentCache full:https://registry.npmjs.org/@types%2fnode cache-miss
+123 silly fetch manifest @types/node@*
+124 silly packumentCache full:https://registry.npmjs.org/@types%2fnode cache-miss
+125 silly fetch manifest readable-stream@^3.0.2
+126 silly packumentCache full:https://registry.npmjs.org/readable-stream cache-hit
+127 silly fetch manifest ms@^2.1.3
+128 silly packumentCache full:https://registry.npmjs.org/ms cache-miss
+129 silly fetch manifest bl@^6.0.8
+130 silly packumentCache full:https://registry.npmjs.org/bl cache-miss
+131 silly fetch manifest debug@^4.3.1
+132 silly packumentCache full:https://registry.npmjs.org/debug cache-hit
+133 silly fetch manifest js-sdsl@4.3.0
+134 silly packumentCache full:https://registry.npmjs.org/js-sdsl cache-miss
+135 silly fetch manifest abort-controller@^3.0.0
+136 silly packumentCache full:https://registry.npmjs.org/abort-controller cache-miss
+137 silly fetch manifest buffer@^6.0.3
+138 silly packumentCache full:https://registry.npmjs.org/buffer cache-miss
+139 http fetch GET 200 https://registry.npmjs.org/abort-controller 155ms (cache revalidated)
+140 silly packumentCache full:https://registry.npmjs.org/abort-controller set size:47272 disposed:false
+141 silly fetch manifest events@^3.3.0
+142 silly packumentCache full:https://registry.npmjs.org/events cache-miss
+143 http fetch GET 200 https://registry.npmjs.org/bl 171ms (cache revalidated)
+144 silly packumentCache full:https://registry.npmjs.org/bl set size:183142 disposed:false
+145 silly fetch manifest process@^0.11.10
+146 silly packumentCache full:https://registry.npmjs.org/process cache-miss
+147 http fetch GET 200 https://registry.npmjs.org/buffer 163ms (cache revalidated)
+148 silly packumentCache full:https://registry.npmjs.org/buffer set size:280480 disposed:false
+149 silly fetch manifest string_decoder@^1.3.0
+150 silly packumentCache full:https://registry.npmjs.org/string_decoder cache-miss
+151 http fetch GET 200 https://registry.npmjs.org/ms 223ms (cache revalidated)
+152 silly packumentCache full:https://registry.npmjs.org/ms set size:92208 disposed:false
+153 silly fetch manifest ip-address@^10.0.1
+154 silly packumentCache full:https://registry.npmjs.org/ip-address cache-miss
+155 http fetch GET 200 https://registry.npmjs.org/js-sdsl 233ms (cache revalidated)
+156 silly packumentCache full:https://registry.npmjs.org/js-sdsl set size:272223 disposed:false
+157 silly fetch manifest smart-buffer@^4.2.0
+158 silly packumentCache full:https://registry.npmjs.org/smart-buffer cache-miss
+159 http fetch GET 200 https://registry.npmjs.org/@types%2fnode 286ms (cache revalidated)
+160 silly packumentCache full:https://registry.npmjs.org/@types%2fnode set size:10665074 disposed:false
+161 silly fetch manifest @babel/runtime@^7.28.4
+162 silly packumentCache full:https://registry.npmjs.org/@babel%2fruntime cache-miss
+163 http fetch GET 200 https://registry.npmjs.org/@types%2fnode 426ms (cache revalidated)
+164 silly packumentCache full:https://registry.npmjs.org/@types%2fnode set size:10665074 disposed:false
+165 silly fetch manifest worker-timers-broker@^8.0.11
+166 silly packumentCache full:https://registry.npmjs.org/worker-timers-broker cache-miss
+167 http fetch GET 200 https://registry.npmjs.org/events 499ms (cache revalidated)
+168 silly packumentCache full:https://registry.npmjs.org/events set size:35240 disposed:false
+169 silly fetch manifest worker-timers-worker@^9.0.11
+170 silly packumentCache full:https://registry.npmjs.org/worker-timers-worker cache-miss
+171 http fetch GET 200 https://registry.npmjs.org/string_decoder 597ms (cache revalidated)
+172 silly packumentCache full:https://registry.npmjs.org/string_decoder set size:28441 disposed:false
+173 http fetch GET 200 https://registry.npmjs.org/process 740ms (cache revalidated)
+174 silly packumentCache full:https://registry.npmjs.org/process set size:31260 disposed:false
+175 http fetch GET 200 https://registry.npmjs.org/ip-address 713ms (cache revalidated)
+176 silly packumentCache full:https://registry.npmjs.org/ip-address set size:132466 disposed:false
+177 http fetch GET 200 https://registry.npmjs.org/smart-buffer 814ms (cache revalidated)
+178 silly packumentCache full:https://registry.npmjs.org/smart-buffer set size:87065 disposed:false
+179 http fetch GET 200 https://registry.npmjs.org/worker-timers-broker 545ms (cache revalidated)
+180 silly packumentCache full:https://registry.npmjs.org/worker-timers-broker set size:788750 disposed:false
+181 http fetch GET 200 https://registry.npmjs.org/@babel%2fruntime 703ms (cache revalidated)
+182 silly packumentCache full:https://registry.npmjs.org/@babel%2fruntime set size:3222662 disposed:false
+183 http fetch GET 200 https://registry.npmjs.org/worker-timers-worker 492ms (cache revalidated)
+184 silly packumentCache full:https://registry.npmjs.org/worker-timers-worker set size:653519 disposed:false
+185 silly placeDep ROOT @types/node@24.9.1 OK for: @types/readable-stream@4.0.21 want: *
+186 silly fetch manifest undici-types@~7.16.0
+187 silly packumentCache full:https://registry.npmjs.org/undici-types cache-miss
+188 http fetch GET 200 https://registry.npmjs.org/undici-types 114ms (cache revalidated)
+189 silly packumentCache full:https://registry.npmjs.org/undici-types set size:148959 disposed:false
+190 silly placeDep ROOT undici-types@7.16.0 OK for: @types/node@24.9.1 want: ~7.16.0
+191 silly placeDep node_modules/concat-stream readable-stream@3.6.2 OK for: concat-stream@2.0.0 want: ^3.0.2
+192 silly fetch manifest string_decoder@^1.1.1
+193 silly packumentCache full:https://registry.npmjs.org/string_decoder cache-hit
+194 silly placeDep ROOT bl@6.1.4 OK for: mqtt-packet@9.0.2 want: ^6.0.8
+195 silly placeDep node_modules/mqtt-packet debug@4.4.3 OK for: mqtt-packet@9.0.2 want: ^4.3.4
+196 silly placeDep ROOT buffer@6.0.3 OK for: bl@6.1.4 want: ^6.0.3
+197 silly fetch manifest base64-js@^1.3.1
+198 silly packumentCache full:https://registry.npmjs.org/base64-js cache-miss
+199 silly fetch manifest ieee754@^1.2.1
+200 silly packumentCache full:https://registry.npmjs.org/ieee754 cache-miss
+201 http fetch GET 200 https://registry.npmjs.org/ieee754 122ms (cache revalidated)
+202 silly packumentCache full:https://registry.npmjs.org/ieee754 set size:34910 disposed:false
+203 http fetch GET 200 https://registry.npmjs.org/base64-js 132ms (cache revalidated)
+204 silly packumentCache full:https://registry.npmjs.org/base64-js set size:41270 disposed:false
+205 silly placeDep ROOT base64-js@1.5.1 OK for: buffer@6.0.3 want: ^1.3.1
+206 silly placeDep ROOT ieee754@1.2.1 OK for: buffer@6.0.3 want: ^1.2.1
+207 silly placeDep node_modules/number-allocator debug@4.4.3 OK for: number-allocator@1.0.14 want: ^4.3.1
+208 silly placeDep ROOT js-sdsl@4.3.0 OK for: number-allocator@1.0.14 want: 4.3.0
+209 silly placeDep ROOT abort-controller@3.0.0 OK for: readable-stream@4.7.0 want: ^3.0.0
+210 silly placeDep ROOT events@3.3.0 OK for: readable-stream@4.7.0 want: ^3.3.0
+211 silly placeDep ROOT process@0.11.10 OK for: readable-stream@4.7.0 want: ^0.11.10
+212 silly placeDep ROOT string_decoder@1.3.0 OK for: readable-stream@4.7.0 want: ^1.3.0
+213 silly fetch manifest event-target-shim@^5.0.0
+214 silly packumentCache full:https://registry.npmjs.org/event-target-shim cache-miss
+215 silly fetch manifest safe-buffer@~5.2.0
+216 silly packumentCache full:https://registry.npmjs.org/safe-buffer cache-miss
+217 http fetch GET 200 https://registry.npmjs.org/safe-buffer 117ms (cache revalidated)
+218 silly packumentCache full:https://registry.npmjs.org/safe-buffer set size:41183 disposed:false
+219 http fetch GET 200 https://registry.npmjs.org/event-target-shim 143ms (cache revalidated)
+220 silly packumentCache full:https://registry.npmjs.org/event-target-shim set size:103601 disposed:false
+221 silly placeDep ROOT event-target-shim@5.0.1 OK for: abort-controller@3.0.0 want: ^5.0.0
+222 silly placeDep ROOT ip-address@10.0.1 OK for: socks@2.8.7 want: ^10.0.1
+223 silly placeDep ROOT smart-buffer@4.2.0 OK for: socks@2.8.7 want: ^4.2.0
+224 silly placeDep node_modules/string_decoder safe-buffer@5.2.1 OK for: string_decoder@1.3.0 want: ~5.2.0
+225 silly placeDep ROOT @babel/runtime@7.28.4 REPLACE for: worker-timers@8.0.25 want: ^7.28.4
+226 silly placeDep ROOT worker-timers-broker@8.0.11 OK for: worker-timers@8.0.25 want: ^8.0.11
+227 silly placeDep ROOT worker-timers-worker@9.0.11 OK for: worker-timers@8.0.25 want: ^9.0.11
+228 silly fetch manifest broker-factory@^3.1.10
+229 silly packumentCache full:https://registry.npmjs.org/broker-factory cache-miss
+230 silly fetch manifest fast-unique-numbers@^9.0.24
+231 silly packumentCache full:https://registry.npmjs.org/fast-unique-numbers cache-miss
+232 silly fetch manifest worker-factory@^7.0.46
+233 silly packumentCache full:https://registry.npmjs.org/worker-factory cache-miss
+234 http fetch GET 200 https://registry.npmjs.org/worker-factory 173ms (cache revalidated)
+235 silly packumentCache full:https://registry.npmjs.org/worker-factory set size:806600 disposed:false
+236 http fetch GET 200 https://registry.npmjs.org/broker-factory 193ms (cache revalidated)
+237 silly packumentCache full:https://registry.npmjs.org/broker-factory set size:768308 disposed:false
+238 http fetch GET 200 https://registry.npmjs.org/fast-unique-numbers 200ms (cache revalidated)
+239 silly packumentCache full:https://registry.npmjs.org/fast-unique-numbers set size:608449 disposed:false
+240 silly placeDep ROOT broker-factory@3.1.10 OK for: worker-timers-broker@8.0.11 want: ^3.1.10
+241 silly placeDep ROOT fast-unique-numbers@9.0.24 OK for: worker-timers-broker@8.0.11 want: ^9.0.24
+242 silly placeDep ROOT worker-factory@7.0.46 OK for: broker-factory@3.1.10 want: ^7.0.46
+243 silly placeDep node_modules/@node-red/nodes debug@4.4.3 OK for: mqtt@5.7.0 want: ^4.3.4
+244 silly placeDep node_modules/@node-red/nodes lru-cache@10.4.3 OK for: mqtt@5.7.0 want: ^10.0.1
+245 silly placeDep ROOT reinterval@1.1.0 OK for: mqtt@5.7.0 want: ^1.1.0
+246 silly placeDep node_modules/@node-red/nodes worker-timers@7.1.8 OK for: mqtt@5.7.0 want: ^7.1.4
+247 silly placeDep node_modules/@node-red/nodes/node_modules/mqtt ws@8.18.3 OK for: mqtt@5.7.0 want: ^8.14.2
+248 silly fetch manifest worker-timers-broker@^6.1.8
+249 silly packumentCache full:https://registry.npmjs.org/worker-timers-broker cache-hit
+250 silly fetch manifest worker-timers-worker@^7.0.71
+251 silly packumentCache full:https://registry.npmjs.org/worker-timers-worker cache-hit
+252 silly placeDep node_modules/@node-red/nodes ms@2.1.3 OK for: debug@4.4.3 want: ^2.1.3
+253 silly placeDep node_modules/@node-red/nodes worker-timers-broker@6.1.8 OK for: worker-timers@7.1.8 want: ^6.1.8
+254 silly placeDep node_modules/@node-red/nodes worker-timers-worker@7.0.71 OK for: worker-timers@7.1.8 want: ^7.0.71
+255 silly fetch manifest fast-unique-numbers@^8.0.13
+256 silly packumentCache full:https://registry.npmjs.org/fast-unique-numbers cache-hit
+257 silly placeDep node_modules/@node-red/nodes fast-unique-numbers@8.0.13 OK for: worker-timers-broker@6.1.8 want: ^8.0.13
+258 silly placeDep node_modules/mqtt-packet ms@2.1.3 OK for: debug@4.4.3 want: ^2.1.3
+259 silly placeDep node_modules/mqtt ms@2.1.3 OK for: debug@4.4.3 want: ^2.1.3
+260 silly placeDep node_modules/number-allocator ms@2.1.3 OK for: debug@4.4.3 want: ^2.1.3
+261 silly reify mark retired [ '/usr/src/node-red/node_modules/@babel/runtime' ]
+262 silly reify mark retired [ '/usr/src/node-red/node_modules/@types/node' ]
+263 silly reify mark retired [ '/usr/src/node-red/node_modules/@types/readable-stream' ]
+264 silly reify mark retired [ '/usr/src/node-red/node_modules/@types/ws' ]
+265 silly reify mark retired [ '/usr/src/node-red/node_modules/bl' ]
+266 silly reify mark retired [ '/usr/src/node-red/node_modules/fast-unique-numbers' ]
+267 silly reify mark retired [
+267 silly reify   '/usr/src/node-red/node_modules/mqtt',
+267 silly reify   '/usr/src/node-red/node_modules/.bin/mqtt',
+267 silly reify   '/usr/src/node-red/node_modules/.bin/mqtt_pub',
+267 silly reify   '/usr/src/node-red/node_modules/.bin/mqtt_sub'
+267 silly reify ]
+268 silly reify mark retired [ '/usr/src/node-red/node_modules/mqtt-packet/node_modules/debug' ]
+269 silly reify mark retired [
+269 silly reify   '/usr/src/node-red/node_modules/number-allocator/node_modules/debug'
+269 silly reify ]
+270 silly reify mark retired [ '/usr/src/node-red/node_modules/regenerator-runtime' ]
+271 silly reify mark retired [ '/usr/src/node-red/node_modules/undici-types' ]
+272 silly reify mark retired [ '/usr/src/node-red/node_modules/worker-timers' ]
+273 silly reify mark retired [ '/usr/src/node-red/node_modules/worker-timers-broker' ]
+274 silly reify mark retired [ '/usr/src/node-red/node_modules/worker-timers-worker' ]
+275 silly reify moves {
+275 silly reify   '/usr/src/node-red/node_modules/@babel/runtime': '/usr/src/node-red/node_modules/@babel/.runtime-OAyiGmnJ',
+275 silly reify   '/usr/src/node-red/node_modules/@types/node': '/usr/src/node-red/node_modules/@types/.node-ZXhSKh2e',
+275 silly reify   '/usr/src/node-red/node_modules/@types/readable-stream': '/usr/src/node-red/node_modules/@types/.readable-stream-OSdBwBMX',
+275 silly reify   '/usr/src/node-red/node_modules/@types/ws': '/usr/src/node-red/node_modules/@types/.ws-IMDJTAtM',
+275 silly reify   '/usr/src/node-red/node_modules/bl': '/usr/src/node-red/node_modules/.bl-P6MSJT0H',
+275 silly reify   '/usr/src/node-red/node_modules/fast-unique-numbers': '/usr/src/node-red/node_modules/.fast-unique-numbers-fiP7CTOB',
+275 silly reify   '/usr/src/node-red/node_modules/mqtt': '/usr/src/node-red/node_modules/.mqtt-PjBClf5I',
+275 silly reify   '/usr/src/node-red/node_modules/.bin/mqtt': '/usr/src/node-red/node_modules/.bin/.mqtt-GfFkDDoY',
+275 silly reify   '/usr/src/node-red/node_modules/.bin/mqtt_pub': '/usr/src/node-red/node_modules/.bin/.mqtt_pub-xvaMAuQm',
+275 silly reify   '/usr/src/node-red/node_modules/.bin/mqtt_sub': '/usr/src/node-red/node_modules/.bin/.mqtt_sub-1H5wIBIX',
+275 silly reify   '/usr/src/node-red/node_modules/mqtt-packet/node_modules/debug': '/usr/src/node-red/node_modules/mqtt-packet/node_modules/.debug-vMSMsXBt',
+275 silly reify   '/usr/src/node-red/node_modules/number-allocator/node_modules/debug': '/usr/src/node-red/node_modules/number-allocator/node_modules/.debug-rUxY1Ip9',
+275 silly reify   '/usr/src/node-red/node_modules/regenerator-runtime': '/usr/src/node-red/node_modules/.regenerator-runtime-Pg2ai0nF',
+275 silly reify   '/usr/src/node-red/node_modules/undici-types': '/usr/src/node-red/node_modules/.undici-types-9MdaTxzW',
+275 silly reify   '/usr/src/node-red/node_modules/worker-timers': '/usr/src/node-red/node_modules/.worker-timers-xH95SJJA',
+275 silly reify   '/usr/src/node-red/node_modules/worker-timers-broker': '/usr/src/node-red/node_modules/.worker-timers-broker-oWDM03Xm',
+275 silly reify   '/usr/src/node-red/node_modules/worker-timers-worker': '/usr/src/node-red/node_modules/.worker-timers-worker-svjcjAQb'
+275 silly reify }
+276 silly audit bulk request {
+276 silly audit   '@isaacs/cliui': [ '8.0.2' ],
+276 silly audit   'ansi-regex': [ '6.1.0', '5.0.1' ],
+276 silly audit   'strip-ansi': [ '7.1.0', '6.0.1' ],
+276 silly audit   '@isaacs/fs-minipass': [ '4.0.1' ],
+276 silly audit   '@node-red/editor-api': [ '4.0.9' ],
+276 silly audit   '@node-red/editor-client': [ '4.0.9' ],
+276 silly audit   '@node-red/nodes': [ '4.0.9' ],
+276 silly audit   '@node-red/registry': [ '4.0.9' ],
+276 silly audit   '@node-red/runtime': [ '4.0.9' ],
+276 silly audit   '@node-red/util': [ '4.0.9' ],
+276 silly audit   '@node-rs/bcrypt': [ '1.10.4' ],
+276 silly audit   '@node-rs/bcrypt-linux-x64-musl': [ '1.10.4' ],
+276 silly audit   '@pkgjs/parseargs': [ '0.11.0' ],
+276 silly audit   '@sindresorhus/is': [ '5.6.0' ],
+276 silly audit   '@szmarczak/http-timer': [ '5.0.1' ],
+276 silly audit   '@types/http-cache-semantics': [ '4.0.4' ],
+276 silly audit   abbrev: [ '1.1.1' ],
+276 silly audit   accepts: [ '1.3.8' ],
+276 silly audit   acorn: [ '8.12.1' ],
+276 silly audit   'acorn-walk': [ '8.3.4' ],
+276 silly audit   'agent-base': [ '6.0.2' ],
+276 silly audit   debug: [ '4.4.0', '2.6.9', '4.4.3' ],
+276 silly audit   ms: [ '2.1.3', '2.0.0' ],
+276 silly audit   ajv: [ '8.17.1' ],
+276 silly audit   'ansi-colors': [ '4.1.3' ],
+276 silly audit   'ansi-styles': [ '6.2.1', '4.3.0' ],
+276 silly audit   'append-field': [ '1.0.0' ],
+276 silly audit   argparse: [ '2.0.1' ],
+276 silly audit   'array-flatten': [ '1.1.1' ],
+276 silly audit   'async-mutex': [ '0.5.0' ],
+276 silly audit   asynckit: [ '0.4.0' ],
+276 silly audit   axios: [ '1.8.3' ],
+276 silly audit   'balanced-match': [ '1.0.2' ],
+276 silly audit   'basic-auth': [ '2.0.1' ],
+276 silly audit   bcryptjs: [ '2.4.3' ],
+276 silly audit   'body-parser': [ '1.20.3' ],
+276 silly audit   'iconv-lite': [ '0.4.24', '0.6.3' ],
+276 silly audit   'raw-body': [ '2.5.2', '3.0.0' ],
+276 silly audit   boolbase: [ '1.0.0' ],
+276 silly audit   'brace-expansion': [ '2.0.1' ],
+276 silly audit   'buffer-from': [ '1.1.2' ],
+276 silly audit   busboy: [ '1.6.0' ],
+276 silly audit   bytes: [ '3.1.2' ],
+276 silly audit   'cacheable-lookup': [ '7.0.0' ],
+276 silly audit   'cacheable-request': [ '10.2.14' ],
+276 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+276 silly audit   'call-bound': [ '1.0.4' ],
+276 silly audit   cheerio: [ '1.0.0-rc.10' ],
+276 silly audit   'cheerio-select': [ '1.6.0' ],
+276 silly audit   chownr: [ '3.0.0' ],
+276 silly audit   'cli-table': [ '0.3.11' ],
+276 silly audit   clone: [ '2.1.2' ],
+276 silly audit   'color-convert': [ '2.0.1' ],
+276 silly audit   'color-name': [ '1.1.4' ],
+276 silly audit   colors: [ '1.0.3' ],
+276 silly audit   'combined-stream': [ '1.0.8' ],
+276 silly audit   'concat-stream': [ '1.6.2', '2.0.0' ],
+276 silly audit   'readable-stream': [ '2.3.8', '4.7.0', '3.6.2' ],
+276 silly audit   'content-disposition': [ '0.5.4' ],
+276 silly audit   'safe-buffer': [ '5.2.1', '5.1.2' ],
+276 silly audit   'content-type': [ '1.0.5' ],
+276 silly audit   cookie: [ '0.7.2', '0.7.1' ],
+276 silly audit   'cookie-parser': [ '1.4.7' ],
+276 silly audit   'cookie-signature': [ '1.0.6', '1.0.7' ],
+276 silly audit   'core-util-is': [ '1.0.3' ],
+276 silly audit   cors: [ '2.8.5' ],
+276 silly audit   cronosjs: [ '1.7.1' ],
+276 silly audit   'cross-spawn': [ '7.0.6' ],
+276 silly audit   'css-select': [ '4.3.0' ],
+276 silly audit   'css-what': [ '6.1.0' ],
+276 silly audit   'decompress-response': [ '6.0.0' ],
+276 silly audit   'mimic-response': [ '3.1.0', '4.0.0' ],
+276 silly audit   'defer-to-connect': [ '2.0.1' ],
+276 silly audit   'delayed-stream': [ '1.0.0' ],
+276 silly audit   denque: [ '2.1.0' ],
+276 silly audit   depd: [ '2.0.0' ],
+276 silly audit   destroy: [ '1.2.0' ],
+276 silly audit   'dom-serializer': [ '1.4.1' ],
+276 silly audit   domelementtype: [ '2.3.0' ],
+276 silly audit   domhandler: [ '4.3.1' ],
+276 silly audit   domutils: [ '2.8.0' ],
+276 silly audit   'dunder-proto': [ '1.0.1' ],
+276 silly audit   eastasianwidth: [ '0.2.0' ],
+276 silly audit   'ee-first': [ '1.1.1' ],
+276 silly audit   'emoji-regex': [ '9.2.2', '8.0.0' ],
+276 silly audit   encodeurl: [ '2.0.0', '1.0.2' ],
+276 silly audit   enquirer: [ '2.4.1' ],
+276 silly audit   entities: [ '2.2.0' ],
+276 silly audit   'es-define-property': [ '1.0.1' ],
+276 silly audit   'es-errors': [ '1.3.0' ],
+276 silly audit   'es-object-atoms': [ '1.1.1' ],
+276 silly audit   'escape-html': [ '1.0.3' ],
+276 silly audit   etag: [ '1.8.1' ],
+276 silly audit   express: [ '4.21.2' ],
+276 silly audit   'express-session': [ '1.18.1' ],
+276 silly audit   'fast-deep-equal': [ '3.1.3' ],
+276 silly audit   'fast-uri': [ '3.0.6' ],
+276 silly audit   finalhandler: [ '1.3.1' ],
+276 silly audit   'follow-redirects': [ '1.15.9' ],
+276 silly audit   'foreground-child': [ '3.3.1' ],
+276 silly audit   'form-data': [ '4.0.0' ],
+276 silly audit   'form-data-encoder': [ '2.1.4' ],
+276 silly audit   forwarded: [ '0.2.0' ],
+276 silly audit   fresh: [ '0.5.2' ],
+276 silly audit   'fs-extra': [ '11.2.0' ],
+276 silly audit   'function-bind': [ '1.1.2' ],
+276 silly audit   'get-intrinsic': [ '1.3.0' ],
+276 silly audit   'get-proto': [ '1.0.1' ],
+276 silly audit   'get-stream': [ '6.0.1' ],
+276 silly audit   glob: [ '10.4.5' ],
+276 silly audit   gopd: [ '1.2.0' ],
+276 silly audit   got: [ '12.6.1' ],
+276 silly audit   'graceful-fs': [ '4.2.11' ],
+276 silly audit   'has-symbols': [ '1.1.0' ],
+276 silly audit   'hash-sum': [ '2.0.0' ],
+276 silly audit   hasown: [ '2.0.2' ],
+276 silly audit   hpagent: [ '1.2.0' ],
+276 silly audit   htmlparser2: [ '6.1.0' ],
+276 silly audit   'http-cache-semantics': [ '4.1.1' ],
+276 silly audit   'http-errors': [ '2.0.0' ],
+276 silly audit   'http2-wrapper': [ '2.2.1' ],
+276 silly audit   'https-proxy-agent': [ '5.0.1' ],
+276 silly audit   i18next: [ '21.10.0' ],
+276 silly audit   inherits: [ '2.0.4' ],
+276 silly audit   'ipaddr.js': [ '1.9.1' ],
+276 silly audit   'is-fullwidth-code-point': [ '3.0.0' ],
+276 silly audit   'is-utf8': [ '0.2.1' ],
+276 silly audit   isarray: [ '1.0.0' ],
+276 silly audit   isexe: [ '2.0.0' ],
+276 silly audit   jackspeak: [ '3.4.3' ],
+276 silly audit   'js-yaml': [ '4.1.0' ],
+276 silly audit   'json-buffer': [ '3.0.1' ],
+276 silly audit   'json-schema-traverse': [ '1.0.0' ],
+276 silly audit   'json-stringify-safe': [ '5.0.1' ],
+276 silly audit   jsonata: [ '2.0.5' ],
+276 silly audit   jsonfile: [ '6.1.0' ],
+276 silly audit   keyv: [ '4.5.4' ],
+276 silly audit   'lodash.clonedeep': [ '4.5.0' ],
+276 silly audit   'lowercase-keys': [ '3.0.0' ],
+276 silly audit   'lru-cache': [ '4.1.5', '10.4.3' ],
+276 silly audit   'math-intrinsics': [ '1.1.0' ],
+276 silly audit   'media-typer': [ '1.1.0', '0.3.0' ],
+276 silly audit   memorystore: [ '1.6.7' ],
+276 silly audit   'merge-descriptors': [ '1.0.3' ],
+276 silly audit   methods: [ '1.1.2' ],
+276 silly audit   mime: [ '3.0.0', '1.6.0' ],
+276 silly audit   'mime-db': [ '1.52.0' ],
+276 silly audit   'mime-types': [ '2.1.35' ],
+276 silly audit   minimatch: [ '9.0.5' ],
+276 silly audit   minimist: [ '1.2.8' ],
+276 silly audit   minipass: [ '7.1.2' ],
+276 silly audit   minizlib: [ '3.0.1' ],
+276 silly audit   mkdirp: [ '0.5.6', '3.0.1' ],
+276 silly audit   moment: [ '2.30.1' ],
+276 silly audit   'moment-timezone': [ '0.5.46' ],
+276 silly audit   ws: [ '7.5.10', '8.18.3' ],
+276 silly audit   multer: [ '1.4.5-lts.1' ],
+276 silly audit   string_decoder: [ '1.1.1', '1.3.0' ],
+276 silly audit   mustache: [ '4.2.0' ],
+276 silly audit   'mute-stream': [ '1.0.0' ],
+276 silly audit   negotiator: [ '0.6.3' ],
+276 silly audit   'node-red': [ '4.0.9' ],
+276 silly audit   'node-red-admin': [ '4.0.1' ],
+276 silly audit   'node-watch': [ '0.7.4' ],
+276 silly audit   nopt: [ '5.0.0' ],
+276 silly audit   'normalize-url': [ '8.0.1' ],
+276 silly audit   'nth-check': [ '2.1.1' ],
+276 silly audit   oauth2orize: [ '1.12.0' ],
+276 silly audit   'object-assign': [ '4.1.1' ],
+276 silly audit   'object-inspect': [ '1.13.4' ],
+276 silly audit   'on-finished': [ '2.4.1' ],
+276 silly audit   'on-headers': [ '1.0.2' ],
+276 silly audit   'p-cancelable': [ '3.0.0' ],
+276 silly audit   'package-json-from-dist': [ '1.0.1' ],
+276 silly audit   parse5: [ '6.0.1' ],
+276 silly audit   'parse5-htmlparser2-tree-adapter': [ '6.0.1' ],
+276 silly audit   parseurl: [ '1.3.3' ],
+276 silly audit   passport: [ '0.7.0' ],
+276 silly audit   'passport-http-bearer': [ '1.0.1' ],
+276 silly audit   'passport-oauth2-client-password': [ '0.1.2' ],
+276 silly audit   'passport-strategy': [ '1.0.0' ],
+276 silly audit   'path-key': [ '3.1.1' ],
+276 silly audit   'path-scurry': [ '1.11.1' ],
+276 silly audit   'path-to-regexp': [ '0.1.12' ],
+276 silly audit   pause: [ '0.0.1' ],
+276 silly audit   'process-nextick-args': [ '2.0.1' ],
+276 silly audit   'proxy-addr': [ '2.0.7' ],
+276 silly audit   'proxy-from-env': [ '1.1.0' ],
+276 silly audit   pseudomap: [ '1.0.2' ],
+276 silly audit   qs: [ '6.13.0' ],
+276 silly audit   'quick-lru': [ '5.1.1' ],
+276 silly audit   'random-bytes': [ '1.0.0' ],
+276 silly audit   'range-parser': [ '1.2.1' ],
+276 silly audit   read: [ '3.0.1' ],
+276 silly audit   'require-from-string': [ '2.0.2' ],
+276 silly audit   'resolve-alpn': [ '1.2.1' ],
+276 silly audit   responselike: [ '3.0.0' ],
+276 silly audit   rfdc: [ '1.4.1' ],
+276 silly audit   rimraf: [ '5.0.10' ],
+276 silly audit   'safer-buffer': [ '2.1.2' ],
+276 silly audit   sax: [ '1.4.1' ],
+276 silly audit   semver: [ '7.6.3' ],
+276 silly audit   send: [ '0.19.0' ],
+276 silly audit   'serve-static': [ '1.16.2' ],
+276 silly audit   setprototypeof: [ '1.2.0' ],
+276 silly audit   'shebang-command': [ '2.0.0' ],
+276 silly audit   'shebang-regex': [ '3.0.0' ],
+276 silly audit   'side-channel': [ '1.1.0' ],
+276 silly audit   'side-channel-list': [ '1.0.0' ],
+276 silly audit   'side-channel-map': [ '1.0.1' ],
+276 silly audit   'side-channel-weakmap': [ '1.0.2' ],
+276 silly audit   'signal-exit': [ '4.1.0' ],
+276 silly audit   statuses: [ '2.0.1' ],
+276 silly audit   streamsearch: [ '1.1.0' ],
+276 silly audit   'string-width': [ '5.1.2', '4.2.3' ],
+276 silly audit   tar: [ '7.4.3' ],
+276 silly audit   yallist: [ '5.0.0', '2.1.2' ],
+276 silly audit   tldts: [ '6.1.84' ],
+276 silly audit   'tldts-core': [ '6.1.84' ],
+276 silly audit   toidentifier: [ '1.0.1' ],
+276 silly audit   'tough-cookie': [ '5.1.2' ],
+276 silly audit   tslib: [ '2.8.1' ],
+276 silly audit   'type-is': [ '1.6.18' ],
+276 silly audit   typedarray: [ '0.0.6' ],
+276 silly audit   'uglify-js': [ '3.17.4' ],
+276 silly audit   'uid-safe': [ '2.1.5' ],
+276 silly audit   uid2: [ '0.0.4' ],
+276 silly audit   universalify: [ '2.0.1' ],
+276 silly audit   unpipe: [ '1.0.0' ],
+276 silly audit   'util-deprecate': [ '1.0.2' ],
+276 silly audit   'utils-merge': [ '1.0.1' ],
+276 silly audit   uuid: [ '9.0.1' ],
+276 silly audit   vary: [ '1.1.2' ],
+276 silly audit   which: [ '2.0.2' ],
+276 silly audit   'wrap-ansi': [ '8.1.0', '7.0.0' ],
+276 silly audit   xml2js: [ '0.6.2' ],
+276 silly audit   xmlbuilder: [ '11.0.1' ],
+276 silly audit   xtend: [ '4.0.2' ],
+276 silly audit   mqtt: [ '5.14.1', '5.7.0' ],
+276 silly audit   '@types/readable-stream': [ '4.0.21' ],
+276 silly audit   '@types/ws': [ '8.18.1' ],
+276 silly audit   commist: [ '3.2.0' ],
+276 silly audit   'help-me': [ '5.0.0' ],
+276 silly audit   'mqtt-packet': [ '9.0.2' ],
+276 silly audit   'number-allocator': [ '1.0.14' ],
+276 silly audit   socks: [ '2.8.7' ],
+276 silly audit   split2: [ '4.2.0' ],
+276 silly audit   'worker-timers': [ '8.0.25', '7.1.8' ],
+276 silly audit   '@types/node': [ '24.9.1' ],
+276 silly audit   'undici-types': [ '7.16.0' ],
+276 silly audit   bl: [ '6.1.4' ],
+276 silly audit   buffer: [ '6.0.3' ],
+276 silly audit   'base64-js': [ '1.5.1' ],
+276 silly audit   ieee754: [ '1.2.1' ],
+276 silly audit   'js-sdsl': [ '4.3.0' ],
+276 silly audit   'abort-controller': [ '3.0.0' ],
+276 silly audit   events: [ '3.3.0' ],
+276 silly audit   process: [ '0.11.10' ],
+276 silly audit   'event-target-shim': [ '5.0.1' ],
+276 silly audit   'ip-address': [ '10.0.1' ],
+276 silly audit   'smart-buffer': [ '4.2.0' ],
+276 silly audit   '@babel/runtime': [ '7.28.4' ],
+276 silly audit   'worker-timers-broker': [ '8.0.11', '6.1.8' ],
+276 silly audit   'worker-timers-worker': [ '9.0.11', '7.0.71' ],
+276 silly audit   'broker-factory': [ '3.1.10' ],
+276 silly audit   'fast-unique-numbers': [ '9.0.24', '8.0.13' ],
+276 silly audit   'worker-factory': [ '7.0.46' ],
+276 silly audit   reinterval: [ '1.1.0' ]
+276 silly audit }
+277 silly tarball no local data for fast-unique-numbers@https://registry.npmjs.org/fast-unique-numbers/-/fast-unique-numbers-8.0.13.tgz. Extracting by manifest.
+278 silly tarball no local data for worker-timers-broker@https://registry.npmjs.org/worker-timers-broker/-/worker-timers-broker-6.1.8.tgz. Extracting by manifest.
+279 silly tarball no local data for worker-timers-worker@https://registry.npmjs.org/worker-timers-worker/-/worker-timers-worker-7.0.71.tgz. Extracting by manifest.
+280 silly tarball no local data for worker-timers@https://registry.npmjs.org/worker-timers/-/worker-timers-7.1.8.tgz. Extracting by manifest.
+281 silly tarball no local data for mqtt@https://registry.npmjs.org/mqtt/-/mqtt-5.7.0.tgz. Extracting by manifest.
+282 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 307ms
+283 silly audit report {
+283 silly audit report   axios: [
+283 silly audit report     {
+283 silly audit report       id: 1108263,
+283 silly audit report       url: 'https://github.com/advisories/GHSA-4hjh-wcwx-xvwj',
+283 silly audit report       title: 'Axios is vulnerable to DoS attack through lack of data size check',
+283 silly audit report       severity: 'high',
+283 silly audit report       vulnerable_versions: '>=1.0.0 <1.12.0',
+283 silly audit report       cwe: [Array],
+283 silly audit report       cvss: [Object]
+283 silly audit report     }
+283 silly audit report   ],
+283 silly audit report   'brace-expansion': [
+283 silly audit report     {
+283 silly audit report       id: 1105444,
+283 silly audit report       url: 'https://github.com/advisories/GHSA-v6h2-p8h4-qcjw',
+283 silly audit report       title: 'brace-expansion Regular Expression Denial of Service vulnerability',
+283 silly audit report       severity: 'low',
+283 silly audit report       vulnerable_versions: '>=2.0.0 <=2.0.1',
+283 silly audit report       cwe: [Array],
+283 silly audit report       cvss: [Object]
+283 silly audit report     }
+283 silly audit report   ],
+283 silly audit report   'form-data': [
+283 silly audit report     {
+283 silly audit report       id: 1106507,
+283 silly audit report       url: 'https://github.com/advisories/GHSA-fjxv-7rqg-78g4',
+283 silly audit report       title: 'form-data uses unsafe random function in form-data for choosing boundary',
+283 silly audit report       severity: 'critical',
+283 silly audit report       vulnerable_versions: '>=4.0.0 <4.0.4',
+283 silly audit report       cwe: [Array],
+283 silly audit report       cvss: [Object]
+283 silly audit report     }
+283 silly audit report   ],
+283 silly audit report   'on-headers': [
+283 silly audit report     {
+283 silly audit report       id: 1106812,
+283 silly audit report       url: 'https://github.com/advisories/GHSA-76c9-3jph-rj3q',
+283 silly audit report       title: 'on-headers is vulnerable to http response header manipulation',
+283 silly audit report       severity: 'low',
+283 silly audit report       vulnerable_versions: '<1.1.0',
+283 silly audit report       cwe: [Array],
+283 silly audit report       cvss: [Object]
+283 silly audit report     }
+283 silly audit report   ]
+283 silly audit report }
+284 silly packumentCache corgi:https://registry.npmjs.org/axios cache-miss
+285 silly packumentCache corgi:https://registry.npmjs.org/brace-expansion cache-miss
+286 silly packumentCache corgi:https://registry.npmjs.org/form-data cache-miss
+287 silly packumentCache corgi:https://registry.npmjs.org/on-headers cache-miss
+288 http fetch GET 200 https://registry.npmjs.org/worker-timers-worker/-/worker-timers-worker-7.0.71.tgz 366ms (cache miss)
+289 http fetch GET 200 https://registry.npmjs.org/worker-timers-broker/-/worker-timers-broker-6.1.8.tgz 445ms (cache miss)
+290 http fetch GET 200 https://registry.npmjs.org/worker-timers/-/worker-timers-7.1.8.tgz 488ms (cache miss)
+291 http fetch GET 200 https://registry.npmjs.org/brace-expansion 244ms (cache miss)
+292 silly packumentCache corgi:https://registry.npmjs.org/brace-expansion set size:undefined disposed:false
+293 http fetch GET 200 https://registry.npmjs.org/on-headers 248ms (cache miss)
+294 silly packumentCache corgi:https://registry.npmjs.org/on-headers set size:undefined disposed:false
+295 http fetch GET 200 https://registry.npmjs.org/form-data 252ms (cache miss)
+296 silly packumentCache corgi:https://registry.npmjs.org/form-data set size:undefined disposed:false
+297 http fetch GET 200 https://registry.npmjs.org/axios 317ms (cache miss)
+298 silly packumentCache corgi:https://registry.npmjs.org/axios set size:undefined disposed:false
+299 http fetch GET 200 https://registry.npmjs.org/fast-unique-numbers/-/fast-unique-numbers-8.0.13.tgz 619ms (cache miss)
+300 silly packumentCache corgi:https://registry.npmjs.org/node-red-admin cache-miss
+301 http fetch GET 200 https://registry.npmjs.org/mqtt/-/mqtt-5.7.0.tgz 744ms (cache miss)
+302 http fetch GET 200 https://registry.npmjs.org/node-red-admin 255ms (cache miss)
+303 silly packumentCache corgi:https://registry.npmjs.org/node-red-admin set size:undefined disposed:false
+304 silly packumentCache corgi:https://registry.npmjs.org/minimatch cache-miss
+305 http fetch GET 200 https://registry.npmjs.org/minimatch 114ms (cache miss)
+306 silly packumentCache corgi:https://registry.npmjs.org/minimatch set size:undefined disposed:false
+307 silly packumentCache corgi:https://registry.npmjs.org/@node-red%2fnodes cache-miss
+308 http fetch GET 200 https://registry.npmjs.org/@node-red%2fnodes 216ms (cache miss)
+309 silly packumentCache corgi:https://registry.npmjs.org/@node-red%2fnodes set size:undefined disposed:false
+310 silly packumentCache corgi:https://registry.npmjs.org/express-session cache-miss
+311 http fetch GET 200 https://registry.npmjs.org/express-session 118ms (cache miss)
+312 silly packumentCache corgi:https://registry.npmjs.org/express-session set size:undefined disposed:false
+313 silly packumentCache corgi:https://registry.npmjs.org/node-red cache-miss
+314 http fetch GET 200 https://registry.npmjs.org/node-red 148ms (cache miss)
+315 silly packumentCache corgi:https://registry.npmjs.org/node-red set size:undefined disposed:false
+316 silly packumentCache corgi:https://registry.npmjs.org/@node-red%2feditor-api cache-miss
+317 http fetch GET 200 https://registry.npmjs.org/@node-red%2feditor-api 170ms (cache miss)
+318 silly packumentCache corgi:https://registry.npmjs.org/@node-red%2feditor-api set size:undefined disposed:false
+319 silly ADD node_modules/worker-factory
+320 silly ADD node_modules/broker-factory
+321 silly ADD node_modules/smart-buffer
+322 silly ADD node_modules/ip-address
+323 silly ADD node_modules/socks
+324 silly CHANGE node_modules/worker-timers-worker
+325 silly CHANGE node_modules/worker-timers-broker
+326 silly CHANGE node_modules/worker-timers
+327 silly CHANGE node_modules/undici-types
+328 silly REMOVE node_modules/regenerator-runtime
+329 silly CHANGE node_modules/number-allocator/node_modules/debug
+330 silly CHANGE node_modules/mqtt-packet/node_modules/debug
+331 silly CHANGE node_modules/mqtt
+332 silly CHANGE node_modules/mqtt/node_modules/ws
+333 silly CHANGE node_modules/mqtt/node_modules/debug
+334 silly CHANGE node_modules/fast-unique-numbers
+335 silly CHANGE node_modules/bl
+336 silly CHANGE node_modules/@types/ws
+337 silly CHANGE node_modules/@types/readable-stream
+338 silly CHANGE node_modules/@types/node
+339 silly ADD node_modules/@node-red/nodes/node_modules/fast-unique-numbers
+340 silly ADD node_modules/@node-red/nodes/node_modules/worker-timers-worker
+341 silly ADD node_modules/@node-red/nodes/node_modules/worker-timers-broker
+342 silly ADD node_modules/@node-red/nodes/node_modules/ms
+343 silly ADD node_modules/@node-red/nodes/node_modules/worker-timers
+344 silly ADD node_modules/@node-red/nodes/node_modules/lru-cache
+345 silly ADD node_modules/@node-red/nodes/node_modules/debug
+346 silly ADD node_modules/@node-red/nodes/node_modules/mqtt
+347 silly ADD node_modules/@node-red/nodes/node_modules/mqtt/node_modules/ws
+348 silly CHANGE node_modules/@babel/runtime
+349 verbose cwd /usr/src/node-red
+350 verbose os Linux 6.6.87.2-microsoft-standard-WSL2
+351 verbose node v20.19.0
+352 verbose npm  v10.8.2
+353 notice
+353 notice New [31mmajor[39m version of npm available! [31m10.8.2[39m -> [34m11.6.2[39m
+353 notice Changelog: [34mhttps://github.com/npm/cli/releases/tag/v11.6.2[39m
+353 notice To update run: [4mnpm install -g npm@11.6.2[24m
+353 notice  { force: true, [Symbol(proc-log.meta)]: true }
+354 verbose exit 0
+355 info ok

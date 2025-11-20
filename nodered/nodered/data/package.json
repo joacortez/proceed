@@ -1,0 +1,17 @@
+{
+    "name": "node-red-project",
+    "description": "A Node-RED Project",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "@arifhosan/node-red-contrib-mqtt-auto": "~2.2.2-1",
+        "imap": "^0.8.19",
+        "mqtt": "^5.14.1",
+        "node-red-contrib-email": "~0.3.1",
+        "node-red-contrib-email-dynamic": "~1.0.1",
+        "node-red-contrib-mqtt-dynamic": "~1.0.9",
+        "node-red-contrib-mqtt-gem": "~1.0.0",
+        "node-red-node-email": "~3.1.0",
+        "simple-parser": "^0.0.0"
+    }
+}

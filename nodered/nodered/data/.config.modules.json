@@ -1,0 +1,16 @@
+{
+    "imap": {
+        "spec": "imap",
+        "module": "imap",
+        "subpath": "",
+        "builtin": false,
+        "known": false
+    },
+    "simple-parser": {
+        "spec": "simple-parser",
+        "module": "simple-parser",
+        "subpath": "",
+        "builtin": false,
+        "known": false
+    }
+}

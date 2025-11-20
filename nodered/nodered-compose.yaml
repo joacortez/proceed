@@ -1,0 +1,20 @@
+networks:
+  internal:
+
+services:
+  nodered:
+    image: nodered/node-red
+    container_name: nodered
+    ports:
+      - "1880:1880"
+    volumes:
+      - ./nodered/data:/data
+    networks:
+      - internal
+
+volumes: 
+  node_red_data:
+
+
+
+

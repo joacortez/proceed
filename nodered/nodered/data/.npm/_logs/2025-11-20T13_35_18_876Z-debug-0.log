@@ -1,0 +1,849 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@10.8.2
+2 info using node@v20.19.0
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/.npmrc
+5 silly config load:file:/usr/src/node-red/.npmrc
+6 silly config load:file:/usr/local/etc/npmrc
+7 verbose title npm install imap
+8 verbose argv "install" "--omit" "dev" "--engine-strict" "imap"
+9 verbose logfile logs-max:10 dir:/data/.npm/_logs/2025-11-20T13_35_18_876Z-
+10 verbose logfile /data/.npm/_logs/2025-11-20T13_35_18_876Z-debug-0.log
+11 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+12 silly logfile start cleaning logs, removing 1 files
+13 silly logfile done cleaning log files
+14 silly idealTree buildDeps
+15 silly fetch manifest imap@*
+16 silly packumentCache full:https://registry.npmjs.org/imap cache-miss
+17 http fetch GET 200 https://registry.npmjs.org/imap 328ms (cache hit)
+18 silly packumentCache full:https://registry.npmjs.org/imap set size:112578 disposed:false
+19 silly placeDep ROOT imap@0.8.19 OK for: node-red-project@0.0.1 want: *
+20 silly fetch manifest utf7@>=1.0.2
+21 silly packumentCache full:https://registry.npmjs.org/utf7 cache-miss
+22 silly fetch manifest readable-stream@1.1.x
+23 silly packumentCache full:https://registry.npmjs.org/readable-stream cache-miss
+24 http fetch GET 200 https://registry.npmjs.org/readable-stream 30ms (cache hit)
+25 silly packumentCache full:https://registry.npmjs.org/readable-stream set size:261096 disposed:false
+26 http fetch GET 200 https://registry.npmjs.org/utf7 36ms (cache hit)
+27 silly packumentCache full:https://registry.npmjs.org/utf7 set size:4887 disposed:false
+28 silly placeDep node_modules/imap readable-stream@1.1.14 OK for: imap@0.8.19 want: 1.1.x
+29 silly placeDep ROOT utf7@1.0.2 OK for: imap@0.8.19 want: >=1.0.2
+30 silly fetch manifest isarray@0.0.1
+31 silly packumentCache full:https://registry.npmjs.org/isarray cache-miss
+32 silly fetch manifest string_decoder@~0.10.x
+33 silly packumentCache full:https://registry.npmjs.org/string_decoder cache-miss
+34 silly fetch manifest semver@~5.3.0
+35 silly packumentCache full:https://registry.npmjs.org/semver cache-miss
+36 http fetch GET 200 https://registry.npmjs.org/string_decoder 32ms (cache hit)
+37 silly packumentCache full:https://registry.npmjs.org/string_decoder set size:28441 disposed:false
+38 http fetch GET 200 https://registry.npmjs.org/isarray 35ms (cache hit)
+39 silly packumentCache full:https://registry.npmjs.org/isarray set size:17392 disposed:false
+40 http fetch GET 200 https://registry.npmjs.org/semver 36ms (cache hit)
+41 silly packumentCache full:https://registry.npmjs.org/semver set size:226907 disposed:false
+42 silly placeDep node_modules/utf7 semver@5.3.0 OK for: utf7@1.0.2 want: ~5.3.0
+43 silly placeDep node_modules/imap isarray@0.0.1 OK for: readable-stream@1.1.14 want: 0.0.1
+44 silly placeDep node_modules/imap string_decoder@0.10.31 OK for: readable-stream@1.1.14 want: ~0.10.x
+45 silly reify moves {}
+46 silly audit bulk request {
+46 silly audit   '@arifhosan/node-red-contrib-mqtt-auto': [ '2.2.2-1' ],
+46 silly audit   '@babel/runtime': [ '7.28.4' ],
+46 silly audit   '@mapbox/node-pre-gyp': [ '1.0.11' ],
+46 silly audit   'agent-base': [ '6.0.2' ],
+46 silly audit   'https-proxy-agent': [ '5.0.1', '5.0.0' ],
+46 silly audit   '@node-red/editor-api': [ '2.2.3' ],
+46 silly audit   ws: [ '7.5.6', '1.1.5', '7.5.10', '8.18.3' ],
+46 silly audit   '@node-red/editor-client': [ '2.2.3' ],
+46 silly audit   '@node-red/nodes': [ '2.2.3' ],
+46 silly audit   'concat-stream': [ '2.0.0', '1.6.2' ],
+46 silly audit   duplexify: [ '4.1.3', '3.7.1' ],
+46 silly audit   'help-me': [ '3.0.0', '1.1.0', '5.0.0' ],
+46 silly audit   mqtt: [ '4.3.5', '5.14.1', '1.14.1', '4.3.8' ],
+46 silly audit   'readable-stream': [ '3.6.2', '1.1.14', '1.0.34', '4.7.0', '2.3.8' ],
+46 silly audit   '@node-red/registry': [ '2.2.3' ],
+46 silly audit   '@node-red/runtime': [ '2.2.3' ],
+46 silly audit   '@node-red/util': [ '2.2.3' ],
+46 silly audit   '@sindresorhus/is': [ '4.6.0' ],
+46 silly audit   '@szmarczak/http-timer': [ '4.0.6' ],
+46 silly audit   '@types/cacheable-request': [ '6.0.3' ],
+46 silly audit   '@types/http-cache-semantics': [ '4.0.4' ],
+46 silly audit   '@types/keyv': [ '3.1.4' ],
+46 silly audit   '@types/node': [ '24.9.1' ],
+46 silly audit   '@types/readable-stream': [ '4.0.21' ],
+46 silly audit   '@types/responselike': [ '1.0.3' ],
+46 silly audit   '@types/ws': [ '8.18.1' ],
+46 silly audit   abbrev: [ '1.1.1' ],
+46 silly audit   'abort-controller': [ '3.0.0' ],
+46 silly audit   accepts: [ '1.3.8' ],
+46 silly audit   acorn: [ '8.7.0' ],
+46 silly audit   'acorn-walk': [ '8.2.0' ],
+46 silly audit   ajv: [ '8.10.0' ],
+46 silly audit   'ansi-colors': [ '4.1.3' ],
+46 silly audit   'ansi-regex': [ '5.0.1' ],
+46 silly audit   'append-field': [ '1.0.0' ],
+46 silly audit   aproba: [ '2.1.0' ],
+46 silly audit   'are-we-there-yet': [ '2.0.0' ],
+46 silly audit   argparse: [ '1.0.10' ],
+46 silly audit   'array-flatten': [ '1.1.1' ],
+46 silly audit   async: [ '0.1.22' ],
+46 silly audit   'async-mutex': [ '0.3.2' ],
+46 silly audit   asynckit: [ '0.4.0' ],
+46 silly audit   axios: [ '0.27.0' ],
+46 silly audit   'balanced-match': [ '1.0.2' ],
+46 silly audit   'base64-js': [ '1.5.1' ],
+46 silly audit   'basic-auth': [ '2.0.1' ],
+46 silly audit   bcrypt: [ '5.0.1' ],
+46 silly audit   bcryptjs: [ '2.4.3' ],
+46 silly audit   bl: [ '4.1.0', '1.2.3', '6.1.4' ],
+46 silly audit   'body-parser': [ '1.19.1' ],
+46 silly audit   debug: [ '2.6.9', '4.4.3' ],
+46 silly audit   'iconv-lite': [ '0.4.24', '0.6.3' ],
+46 silly audit   ms: [ '2.0.0', '2.1.3' ],
+46 silly audit   qs: [ '6.9.6' ],
+46 silly audit   'raw-body': [ '2.4.2', '2.4.3' ],
+46 silly audit   boolbase: [ '1.0.0' ],
+46 silly audit   'brace-expansion': [ '1.1.12' ],
+46 silly audit   'broker-factory': [ '3.1.10' ],
+46 silly audit   buffer: [ '5.7.1', '6.0.3' ],
+46 silly audit   'buffer-from': [ '1.1.2' ],
+46 silly audit   busboy: [ '0.2.14' ],
+46 silly audit   isarray: [ '0.0.1', '1.0.0' ],
+46 silly audit   string_decoder: [ '0.10.31', '1.3.0', '1.1.1' ],
+46 silly audit   bytes: [ '3.1.1', '3.1.2' ],
+46 silly audit   'cacheable-lookup': [ '5.0.4' ],
+46 silly audit   'cacheable-request': [ '7.0.4' ],
+46 silly audit   'callback-stream': [ '1.1.0' ],
+46 silly audit   cheerio: [ '1.0.0-rc.10' ],
+46 silly audit   'cheerio-select': [ '1.6.0' ],
+46 silly audit   chownr: [ '2.0.0' ],
+46 silly audit   'cli-table': [ '0.3.11' ],
+46 silly audit   clone: [ '2.1.2' ],
+46 silly audit   'clone-response': [ '1.0.3' ],
+46 silly audit   'color-support': [ '1.1.3' ],
+46 silly audit   colors: [ '1.0.3' ],
+46 silly audit   'combined-stream': [ '1.0.8' ],
+46 silly audit   commist: [ '1.1.0', '3.2.0' ],
+46 silly audit   'concat-map': [ '0.0.1' ],
+46 silly audit   'console-control-strings': [ '1.1.0' ],
+46 silly audit   'content-disposition': [ '0.5.4' ],
+46 silly audit   'safe-buffer': [ '5.2.1', '5.1.2' ],
+46 silly audit   'content-type': [ '1.0.4' ],
+46 silly audit   cookie: [ '0.4.2', '0.4.1' ],
+46 silly audit   'cookie-parser': [ '1.4.6' ],
+46 silly audit   'cookie-signature': [ '1.0.6' ],
+46 silly audit   'core-util-is': [ '1.0.3' ],
+46 silly audit   cors: [ '2.8.5' ],
+46 silly audit   cronosjs: [ '1.7.1' ],
+46 silly audit   'css-select': [ '4.3.0' ],
+46 silly audit   'css-what': [ '6.2.2' ],
+46 silly audit   'decompress-response': [ '6.0.0' ],
+46 silly audit   'mimic-response': [ '3.1.0', '1.0.1' ],
+46 silly audit   'defer-to-connect': [ '2.0.1' ],
+46 silly audit   'delayed-stream': [ '1.0.0' ],
+46 silly audit   delegates: [ '1.0.0' ],
+46 silly audit   denque: [ '2.0.1' ],
+46 silly audit   depd: [ '1.1.2', '2.0.0' ],
+46 silly audit   destr: [ '2.0.5' ],
+46 silly audit   destroy: [ '1.0.4' ],
+46 silly audit   'detect-libc': [ '2.1.2' ],
+46 silly audit   dicer: [ '0.2.5' ],
+46 silly audit   'dom-serializer': [ '1.4.1', '2.0.0' ],
+46 silly audit   domelementtype: [ '2.3.0' ],
+46 silly audit   domhandler: [ '4.3.1', '5.0.3' ],
+46 silly audit   domutils: [ '2.8.0', '3.2.2' ],
+46 silly audit   'ee-first': [ '1.1.1' ],
+46 silly audit   'emoji-regex': [ '8.0.0' ],
+46 silly audit   encodeurl: [ '1.0.2' ],
+46 silly audit   'end-of-stream': [ '1.4.5' ],
+46 silly audit   enquirer: [ '2.4.1' ],
+46 silly audit   entities: [ '2.2.0', '4.5.0' ],
+46 silly audit   'escape-html': [ '1.0.3' ],
+46 silly audit   esprima: [ '4.0.1' ],
+46 silly audit   etag: [ '1.8.1' ],
+46 silly audit   'event-target-shim': [ '5.0.1' ],
+46 silly audit   events: [ '3.3.0' ],
+46 silly audit   express: [ '4.17.2' ],
+46 silly audit   'express-session': [ '1.17.2' ],
+46 silly audit   extend: [ '3.0.2' ],
+46 silly audit   'fast-deep-equal': [ '3.1.3' ],
+46 silly audit   'fast-unique-numbers': [ '9.0.24' ],
+46 silly audit   finalhandler: [ '1.1.2' ],
+46 silly audit   'follow-redirects': [ '1.15.11' ],
+46 silly audit   'form-data': [ '4.0.0' ],
+46 silly audit   forwarded: [ '0.2.0' ],
+46 silly audit   fresh: [ '0.5.2' ],
+46 silly audit   'fs-extra': [ '10.0.0' ],
+46 silly audit   'fs-minipass': [ '2.1.0' ],
+46 silly audit   'fs.notify': [ '0.0.4' ],
+46 silly audit   'fs.realpath': [ '1.0.0' ],
+46 silly audit   gauge: [ '3.0.2' ],
+46 silly audit   'get-stream': [ '5.2.0' ],
+46 silly audit   glob: [ '7.2.3' ],
+46 silly audit   'glob-parent': [ '3.1.0' ],
+46 silly audit   'glob-stream': [ '6.1.0' ],
+46 silly audit   got: [ '11.8.3' ],
+46 silly audit   'graceful-fs': [ '4.2.11' ],
+46 silly audit   'has-unicode': [ '2.0.1' ],
+46 silly audit   'hash-sum': [ '2.0.0' ],
+46 silly audit   hpagent: [ '0.1.2' ],
+46 silly audit   htmlparser2: [ '6.1.0', '8.0.2' ],
+46 silly audit   'http-cache-semantics': [ '4.2.0' ],
+46 silly audit   'http-errors': [ '1.8.1' ],
+46 silly audit   'http2-wrapper': [ '1.0.3' ],
+46 silly audit   i18next: [ '21.6.11' ],
+46 silly audit   ieee754: [ '1.2.1' ],
+46 silly audit   inflight: [ '1.0.6' ],
+46 silly audit   inherits: [ '2.0.4' ],
+46 silly audit   'ip-address': [ '10.0.1' ],
+46 silly audit   'ipaddr.js': [ '1.9.1' ],
+46 silly audit   'is-absolute': [ '1.0.0' ],
+46 silly audit   'is-extglob': [ '2.1.1' ],
+46 silly audit   'is-fullwidth-code-point': [ '3.0.0' ],
+46 silly audit   'is-glob': [ '3.1.0' ],
+46 silly audit   'is-negated-glob': [ '1.0.0' ],
+46 silly audit   'is-relative': [ '1.0.0' ],
+46 silly audit   'is-unc-path': [ '1.0.0' ],
+46 silly audit   'is-utf8': [ '0.2.1' ],
+46 silly audit   'is-windows': [ '1.0.2' ],
+46 silly audit   'js-sdsl': [ '4.3.0' ],
+46 silly audit   'js-yaml': [ '3.14.1' ],
+46 silly audit   'json-buffer': [ '3.0.1' ],
+46 silly audit   'json-schema-traverse': [ '1.0.0' ],
+46 silly audit   'json-stable-stringify-without-jsonify': [ '1.0.1' ],
+46 silly audit   'json-stringify-safe': [ '5.0.1' ],
+46 silly audit   jsonata: [ '1.8.6' ],
+46 silly audit   jsonfile: [ '6.2.0' ],
+46 silly audit   keyv: [ '4.5.4' ],
+46 silly audit   leven: [ '2.1.0' ],
+46 silly audit   'lodash.clonedeep': [ '4.5.0' ],
+46 silly audit   'lowercase-keys': [ '2.0.0' ],
+46 silly audit   'lru-cache': [ '6.0.0', '4.1.5', '10.4.3' ],
+46 silly audit   'make-dir': [ '3.1.0' ],
+46 silly audit   semver: [ '6.3.1', '7.3.5', '5.3.0' ],
+46 silly audit   'media-typer': [ '1.1.0', '0.3.0' ],
+46 silly audit   memorystore: [ '1.6.7' ],
+46 silly audit   yallist: [ '2.1.2', '4.0.0' ],
+46 silly audit   'merge-descriptors': [ '1.0.1' ],
+46 silly audit   methods: [ '1.1.2' ],
+46 silly audit   mime: [ '3.0.0', '1.6.0' ],
+46 silly audit   'mime-db': [ '1.52.0' ],
+46 silly audit   'mime-types': [ '2.1.35' ],
+46 silly audit   minimatch: [ '3.1.2' ],
+46 silly audit   minimist: [ '1.2.8' ],
+46 silly audit   minipass: [ '3.3.6' ],
+46 silly audit   minizlib: [ '2.1.2' ],
+46 silly audit   mkdirp: [ '0.5.6', '1.0.4' ],
+46 silly audit   moment: [ '2.30.1' ],
+46 silly audit   'moment-timezone': [ '0.5.34' ],
+46 silly audit   'mqtt-connection': [ '2.1.1' ],
+46 silly audit   'mqtt-packet': [ '3.5.1', '6.10.0', '9.0.2' ],
+46 silly audit   through2: [ '0.6.5', '2.0.5' ],
+46 silly audit   split2: [ '4.2.0', '2.2.0', '3.2.2' ],
+46 silly audit   multer: [ '1.4.4' ],
+46 silly audit   mustache: [ '4.2.0' ],
+46 silly audit   'mute-stream': [ '0.0.8' ],
+46 silly audit   negotiator: [ '0.6.3' ],
+46 silly audit   'node-addon-api': [ '3.2.1' ],
+46 silly audit   'node-fetch': [ '2.7.0' ],
+46 silly audit   'node-red': [ '2.2.3' ],
+46 silly audit   'node-red-admin': [ '2.2.4' ],
+46 silly audit   'node-red-contrib-email': [ '0.3.1' ],
+46 silly audit   'node-red-contrib-email-dynamic': [ '1.0.1' ],
+46 silly audit   'node-red-contrib-mqtt-dynamic': [ '1.0.9' ],
+46 silly audit   pump: [ '1.0.3', '3.0.3', '2.0.1' ],
+46 silly audit   ultron: [ '1.0.2' ],
+46 silly audit   'websocket-stream': [ '3.3.3' ],
+46 silly audit   'node-red-contrib-mqtt-gem': [ '1.0.0' ],
+46 silly audit   'node-red-node-email': [ '3.1.0' ],
+46 silly audit   imap: [ '0.8.19' ],
+46 silly audit   nodemailer: [ '6.10.1', '7.0.4', '7.0.5', '7.0.3' ],
+46 silly audit   'safer-buffer': [ '2.1.2' ],
+46 silly audit   utf7: [ '1.0.2' ],
+46 silly audit   nopt: [ '5.0.0' ],
+46 silly audit   'normalize-url': [ '6.1.0' ],
+46 silly audit   npmlog: [ '5.0.1' ],
+46 silly audit   'nth-check': [ '2.1.1' ],
+46 silly audit   'number-allocator': [ '1.0.14' ],
+46 silly audit   oauth2orize: [ '1.11.1' ],
+46 silly audit   'object-assign': [ '4.1.1' ],
+46 silly audit   'on-finished': [ '2.3.0' ],
+46 silly audit   'on-headers': [ '1.0.2' ],
+46 silly audit   once: [ '1.4.0' ],
+46 silly audit   options: [ '0.0.6' ],
+46 silly audit   'ordered-read-streams': [ '1.0.1' ],
+46 silly audit   'p-cancelable': [ '2.1.1' ],
+46 silly audit   parse5: [ '6.0.1' ],
+46 silly audit   'parse5-htmlparser2-tree-adapter': [ '6.0.1' ],
+46 silly audit   parseurl: [ '1.3.3' ],
+46 silly audit   passport: [ '0.5.2' ],
+46 silly audit   'passport-http-bearer': [ '1.0.1' ],
+46 silly audit   'passport-oauth2-client-password': [ '0.1.2' ],
+46 silly audit   'passport-strategy': [ '1.0.0' ],
+46 silly audit   'path-dirname': [ '1.0.2' ],
+46 silly audit   'path-is-absolute': [ '1.0.1' ],
+46 silly audit   'path-to-regexp': [ '0.1.7' ],
+46 silly audit   pause: [ '0.0.1' ],
+46 silly audit   process: [ '0.11.10' ],
+46 silly audit   'process-nextick-args': [ '2.0.1' ],
+46 silly audit   'proxy-addr': [ '2.0.7' ],
+46 silly audit   pseudomap: [ '1.0.2' ],
+46 silly audit   psl: [ '1.15.0' ],
+46 silly audit   punycode: [ '2.3.1' ],
+46 silly audit   pumpify: [ '1.5.1' ],
+46 silly audit   'quick-lru': [ '5.1.1' ],
+46 silly audit   'random-bytes': [ '1.0.0' ],
+46 silly audit   'range-parser': [ '1.2.1' ],
+46 silly audit   read: [ '1.0.7' ],
+46 silly audit   reduplexer: [ '1.1.0' ],
+46 silly audit   reinterval: [ '1.1.0' ],
+46 silly audit   'remove-trailing-separator': [ '1.1.0' ],
+46 silly audit   'require-from-string': [ '2.0.2' ],
+46 silly audit   'resolve-alpn': [ '1.2.1' ],
+46 silly audit   responselike: [ '2.0.1' ],
+46 silly audit   retry: [ '0.6.1' ],
+46 silly audit   rfdc: [ '1.4.1' ],
+46 silly audit   rimraf: [ '3.0.2' ],
+46 silly audit   sax: [ '1.4.1' ],
+46 silly audit   send: [ '0.17.2' ],
+46 silly audit   'serve-static': [ '1.14.2' ],
+46 silly audit   'set-blocking': [ '2.0.0' ],
+46 silly audit   setprototypeof: [ '1.2.0' ],
+46 silly audit   'signal-exit': [ '3.0.7' ],
+46 silly audit   'smart-buffer': [ '4.2.0' ],
+46 silly audit   socks: [ '2.8.7' ],
+46 silly audit   'sprintf-js': [ '1.0.3' ],
+46 silly audit   statuses: [ '1.5.0' ],
+46 silly audit   'stream-shift': [ '1.0.3' ],
+46 silly audit   streamsearch: [ '0.1.2' ],
+46 silly audit   'string-width': [ '4.2.3' ],
+46 silly audit   'strip-ansi': [ '6.0.1' ],
+46 silly audit   tar: [ '6.1.11' ],
+46 silly audit   'through2-filter': [ '3.0.0' ],
+46 silly audit   'to-absolute-glob': [ '2.0.2' ],
+46 silly audit   toidentifier: [ '1.0.1' ],
+46 silly audit   'tough-cookie': [ '4.0.0' ],
+46 silly audit   universalify: [ '0.1.2', '2.0.1' ],
+46 silly audit   tr46: [ '0.0.3' ],
+46 silly audit   tslib: [ '2.8.1' ],
+46 silly audit   'type-is': [ '1.6.18' ],
+46 silly audit   typedarray: [ '0.0.6' ],
+46 silly audit   'uglify-js': [ '3.15.1' ],
+46 silly audit   'uid-safe': [ '2.1.5' ],
+46 silly audit   uid2: [ '0.0.4' ],
+46 silly audit   'unc-path-regex': [ '0.1.2' ],
+46 silly audit   'undici-types': [ '7.16.0' ],
+46 silly audit   'unique-stream': [ '2.3.1' ],
+46 silly audit   unpipe: [ '1.0.0' ],
+46 silly audit   'uri-js': [ '4.4.1' ],
+46 silly audit   'util-deprecate': [ '1.0.2' ],
+46 silly audit   'utils-merge': [ '1.0.1' ],
+46 silly audit   uuid: [ '8.3.2' ],
+46 silly audit   vary: [ '1.1.2' ],
+46 silly audit   'webidl-conversions': [ '3.0.1' ],
+46 silly audit   'whatwg-url': [ '5.0.0' ],
+46 silly audit   'wide-align': [ '1.1.5' ],
+46 silly audit   'worker-factory': [ '7.0.46' ],
+46 silly audit   'worker-timers': [ '8.0.25' ],
+46 silly audit   'worker-timers-broker': [ '8.0.11' ],
+46 silly audit   'worker-timers-worker': [ '9.0.11' ],
+46 silly audit   wrappy: [ '1.0.2' ],
+46 silly audit   xml2js: [ '0.4.23' ],
+46 silly audit   xmlbuilder: [ '11.0.1' ],
+46 silly audit   xtend: [ '4.0.2' ],
+46 silly audit   '@selderee/plugin-htmlparser2': [ '0.11.0' ],
+46 silly audit   'base32.js': [ '0.1.0' ],
+46 silly audit   deepmerge: [ '4.3.1' ],
+46 silly audit   'encoding-japanese': [ '2.2.0' ],
+46 silly audit   he: [ '1.2.0' ],
+46 silly audit   'html-to-text': [ '9.0.5' ],
+46 silly audit   'ipv6-normalize': [ '1.0.1' ],
+46 silly audit   leac: [ '0.6.0' ],
+46 silly audit   libbase64: [ '1.3.0' ],
+46 silly audit   libmime: [ '5.3.7' ],
+46 silly audit   libqp: [ '2.1.1' ],
+46 silly audit   'linkify-it': [ '5.0.0' ],
+46 silly audit   mailparser: [ '3.7.4' ],
+46 silly audit   mailsplit: [ '5.4.5' ],
+46 silly audit   'node-pop3': [ '0.9.1' ],
+46 silly audit   parseley: [ '0.12.1' ],
+46 silly audit   peberminta: [ '0.9.0' ],
+46 silly audit   'punycode.js': [ '2.3.1' ],
+46 silly audit   selderee: [ '0.11.0' ],
+46 silly audit   'smtp-server': [ '3.14.0' ],
+46 silly audit   tlds: [ '1.259.0' ],
+46 silly audit   'uc.micro': [ '2.1.0' ]
+46 silly audit }
+47 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 352ms
+48 silly audit report {
+48 silly audit report   ws: [
+48 silly audit report     {
+48 silly audit report       id: 1098393,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-3h5v-q93c-6h6q',
+48 silly audit report       title: 'ws affected by a DoS when handling a request with many HTTP headers',
+48 silly audit report       severity: 'high',
+48 silly audit report       vulnerable_versions: '>=7.0.0 <7.5.10',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     }
+48 silly audit report   ],
+48 silly audit report   axios: [
+48 silly audit report     {
+48 silly audit report       id: 1103617,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-jr5f-v2jv-69x6',
+48 silly audit report       title: 'axios Requests Vulnerable To Possible SSRF and Credential Leakage via Absolute URL',
+48 silly audit report       severity: 'high',
+48 silly audit report       vulnerable_versions: '<0.30.0',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     },
+48 silly audit report     {
+48 silly audit report       id: 1108262,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-4hjh-wcwx-xvwj',
+48 silly audit report       title: 'Axios is vulnerable to DoS attack through lack of data size check',
+48 silly audit report       severity: 'high',
+48 silly audit report       vulnerable_versions: '<0.30.2',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     },
+48 silly audit report     {
+48 silly audit report       id: 1097679,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-wf5p-g6vw-rhxx',
+48 silly audit report       title: 'Axios Cross-Site Request Forgery Vulnerability',
+48 silly audit report       severity: 'moderate',
+48 silly audit report       vulnerable_versions: '>=0.8.1 <0.28.0',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     }
+48 silly audit report   ],
+48 silly audit report   'body-parser': [
+48 silly audit report     {
+48 silly audit report       id: 1099520,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-qwcr-r2fm-qrc7',
+48 silly audit report       title: 'body-parser vulnerable to denial of service when url encoding is enabled',
+48 silly audit report       severity: 'high',
+48 silly audit report       vulnerable_versions: '<1.20.3',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     }
+48 silly audit report   ],
+48 silly audit report   qs: [
+48 silly audit report     {
+48 silly audit report       id: 1104122,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-hrpp-h998-j3pp',
+48 silly audit report       title: 'qs vulnerable to Prototype Pollution',
+48 silly audit report       severity: 'high',
+48 silly audit report       vulnerable_versions: '>=6.9.0 <6.9.7',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     }
+48 silly audit report   ],
+48 silly audit report   cookie: [
+48 silly audit report     {
+48 silly audit report       id: 1103907,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-pxg6-pf52-xh8x',
+48 silly audit report       title: 'cookie accepts cookie name, path, and domain with out of bounds characters',
+48 silly audit report       severity: 'low',
+48 silly audit report       vulnerable_versions: '<0.7.0',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     }
+48 silly audit report   ],
+48 silly audit report   dicer: [
+48 silly audit report     {
+48 silly audit report       id: 1093150,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-wm7h-9275-46v2',
+48 silly audit report       title: 'Crash in HeaderParser in dicer',
+48 silly audit report       severity: 'high',
+48 silly audit report       vulnerable_versions: '<=0.3.1',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     }
+48 silly audit report   ],
+48 silly audit report   express: [
+48 silly audit report     {
+48 silly audit report       id: 1100530,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-qw6h-vgh9-j6wx',
+48 silly audit report       title: 'express vulnerable to XSS via response.redirect()',
+48 silly audit report       severity: 'low',
+48 silly audit report       vulnerable_versions: '<4.20.0',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     },
+48 silly audit report     {
+48 silly audit report       id: 1096820,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-rv95-896h-c2vc',
+48 silly audit report       title: 'Express.js Open Redirect in malformed URLs',
+48 silly audit report       severity: 'moderate',
+48 silly audit report       vulnerable_versions: '<4.19.2',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     }
+48 silly audit report   ],
+48 silly audit report   'form-data': [
+48 silly audit report     {
+48 silly audit report       id: 1109538,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-fjxv-7rqg-78g4',
+48 silly audit report       title: 'form-data uses unsafe random function in form-data for choosing boundary',
+48 silly audit report       severity: 'critical',
+48 silly audit report       vulnerable_versions: '>=4.0.0 <4.0.4',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     }
+48 silly audit report   ],
+48 silly audit report   got: [
+48 silly audit report     {
+48 silly audit report       id: 1088948,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-pfrx-2q88-qq97',
+48 silly audit report       title: 'Got allows a redirect to a UNIX socket',
+48 silly audit report       severity: 'moderate',
+48 silly audit report       vulnerable_versions: '<11.8.5',
+48 silly audit report       cwe: [],
+48 silly audit report       cvss: [Object]
+48 silly audit report     }
+48 silly audit report   ],
+48 silly audit report   'js-yaml': [
+48 silly audit report     {
+48 silly audit report       id: 1109801,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-mh29-5h37-fv8m',
+48 silly audit report       title: 'js-yaml has prototype pollution in merge (<<)',
+48 silly audit report       severity: 'moderate',
+48 silly audit report       vulnerable_versions: '<3.14.2',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     }
+48 silly audit report   ],
+48 silly audit report   jsonata: [
+48 silly audit report     {
+48 silly audit report       id: 1096642,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-fqg8-vfv7-8fj8',
+48 silly audit report       title: 'JSONata expression can pollute the "Object" prototype',
+48 silly audit report       severity: 'critical',
+48 silly audit report       vulnerable_versions: '>=1.4.0 <1.8.7',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     }
+48 silly audit report   ],
+48 silly audit report   semver: [
+48 silly audit report     {
+48 silly audit report       id: 1101088,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-c2qf-rxjj-qqgw',
+48 silly audit report       title: 'semver vulnerable to Regular Expression Denial of Service',
+48 silly audit report       severity: 'high',
+48 silly audit report       vulnerable_versions: '>=7.0.0 <7.5.2',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     },
+48 silly audit report     {
+48 silly audit report       id: 1101089,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-c2qf-rxjj-qqgw',
+48 silly audit report       title: 'semver vulnerable to Regular Expression Denial of Service',
+48 silly audit report       severity: 'high',
+48 silly audit report       vulnerable_versions: '<5.7.2',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     }
+48 silly audit report   ],
+48 silly audit report   'moment-timezone': [
+48 silly audit report     {
+48 silly audit report       id: 1088402,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-56x4-j7p9-fcf9',
+48 silly audit report       title: 'Command Injection in moment-timezone',
+48 silly audit report       severity: 'low',
+48 silly audit report       vulnerable_versions: '>=0.1.0 <0.5.35',
+48 silly audit report       cwe: [],
+48 silly audit report       cvss: [Object]
+48 silly audit report     },
+48 silly audit report     {
+48 silly audit report       id: 1088403,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-v78c-4p63-2j6c',
+48 silly audit report       title: 'Cleartext Transmission of Sensitive Information in moment-timezone',
+48 silly audit report       severity: 'moderate',
+48 silly audit report       vulnerable_versions: '>=0.1.0 <0.5.35',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     }
+48 silly audit report   ],
+48 silly audit report   multer: [
+48 silly audit report     {
+48 silly audit report       id: 1104780,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-4pg4-qvpc-4q3h',
+48 silly audit report       title: 'Multer vulnerable to Denial of Service from maliciously crafted requests',
+48 silly audit report       severity: 'high',
+48 silly audit report       vulnerable_versions: '>=1.4.4-lts.1 <2.0.0',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     },
+48 silly audit report     {
+48 silly audit report       id: 1105262,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-g5hg-p3ph-g8qg',
+48 silly audit report       title: 'Multer vulnerable to Denial of Service via unhandled exception',
+48 silly audit report       severity: 'high',
+48 silly audit report       vulnerable_versions: '>=1.4.4-lts.1 <2.0.1',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     },
+48 silly audit report     {
+48 silly audit report       id: 1105267,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-44fp-w29j-9vj5',
+48 silly audit report       title: 'Multer vulnerable to Denial of Service via memory leaks from unclosed streams',
+48 silly audit report       severity: 'high',
+48 silly audit report       vulnerable_versions: '<2.0.0',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     },
+48 silly audit report     {
+48 silly audit report       id: 1106463,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-fjgf-rc76-4x9p',
+48 silly audit report       title: 'Multer vulnerable to Denial of Service via unhandled exception from malformed request',
+48 silly audit report       severity: 'high',
+48 silly audit report       vulnerable_versions: '>=1.4.4-lts.1 <2.0.2',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     }
+48 silly audit report   ],
+48 silly audit report   nodemailer: [
+48 silly audit report     {
+48 silly audit report       id: 1109804,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-mm7p-fcc7-pg87',
+48 silly audit report       title: 'Nodemailer: Email to an unintended domain can occur due to Interpretation Conflict',
+48 silly audit report       severity: 'moderate',
+48 silly audit report       vulnerable_versions: '<7.0.7',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     }
+48 silly audit report   ],
+48 silly audit report   'on-headers': [
+48 silly audit report     {
+48 silly audit report       id: 1106812,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-76c9-3jph-rj3q',
+48 silly audit report       title: 'on-headers is vulnerable to http response header manipulation',
+48 silly audit report       severity: 'low',
+48 silly audit report       vulnerable_versions: '<1.1.0',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     }
+48 silly audit report   ],
+48 silly audit report   passport: [
+48 silly audit report     {
+48 silly audit report       id: 1093639,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-v923-w3x8-wh69',
+48 silly audit report       title: 'Passport vulnerable to session regeneration when a users logs in or out',
+48 silly audit report       severity: 'moderate',
+48 silly audit report       vulnerable_versions: '<0.6.0',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     }
+48 silly audit report   ],
+48 silly audit report   'path-to-regexp': [
+48 silly audit report     {
+48 silly audit report       id: 1101850,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-9wv6-86v2-598j',
+48 silly audit report       title: 'path-to-regexp outputs backtracking regular expressions',
+48 silly audit report       severity: 'high',
+48 silly audit report       vulnerable_versions: '<0.1.10',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     },
+48 silly audit report     {
+48 silly audit report       id: 1105199,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-rhx6-c78j-4q9w',
+48 silly audit report       title: 'path-to-regexp contains a ReDoS',
+48 silly audit report       severity: 'high',
+48 silly audit report       vulnerable_versions: '<0.1.12',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     }
+48 silly audit report   ],
+48 silly audit report   send: [
+48 silly audit report     {
+48 silly audit report       id: 1109556,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-m6fv-jmcg-4jfg',
+48 silly audit report       title: 'send vulnerable to template injection that can lead to XSS',
+48 silly audit report       severity: 'low',
+48 silly audit report       vulnerable_versions: '<0.19.0',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     }
+48 silly audit report   ],
+48 silly audit report   'serve-static': [
+48 silly audit report     {
+48 silly audit report       id: 1100528,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-cm22-4g7w-348p',
+48 silly audit report       title: 'serve-static vulnerable to template injection that can lead to XSS',
+48 silly audit report       severity: 'low',
+48 silly audit report       vulnerable_versions: '<1.16.0',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     }
+48 silly audit report   ],
+48 silly audit report   tar: [
+48 silly audit report     {
+48 silly audit report       id: 1097493,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-f5x3-32g6-xq36',
+48 silly audit report       title: 'Denial of service while parsing a tar file due to lack of folders count validation',
+48 silly audit report       severity: 'moderate',
+48 silly audit report       vulnerable_versions: '<6.2.1',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     }
+48 silly audit report   ],
+48 silly audit report   'tough-cookie': [
+48 silly audit report     {
+48 silly audit report       id: 1097682,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-72xf-g2v4-qvf3',
+48 silly audit report       title: 'tough-cookie Prototype Pollution vulnerability',
+48 silly audit report       severity: 'moderate',
+48 silly audit report       vulnerable_versions: '<4.1.3',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     }
+48 silly audit report   ],
+48 silly audit report   xml2js: [
+48 silly audit report     {
+48 silly audit report       id: 1096693,
+48 silly audit report       url: 'https://github.com/advisories/GHSA-776f-qx25-q3cc',
+48 silly audit report       title: 'xml2js is vulnerable to prototype pollution',
+48 silly audit report       severity: 'moderate',
+48 silly audit report       vulnerable_versions: '<0.5.0',
+48 silly audit report       cwe: [Array],
+48 silly audit report       cvss: [Object]
+48 silly audit report     }
+48 silly audit report   ]
+48 silly audit report }
+49 silly packumentCache corgi:https://registry.npmjs.org/ws cache-miss
+50 silly packumentCache corgi:https://registry.npmjs.org/axios cache-miss
+51 silly packumentCache corgi:https://registry.npmjs.org/body-parser cache-miss
+52 silly packumentCache corgi:https://registry.npmjs.org/qs cache-miss
+53 silly packumentCache corgi:https://registry.npmjs.org/cookie cache-miss
+54 silly packumentCache corgi:https://registry.npmjs.org/dicer cache-miss
+55 silly packumentCache corgi:https://registry.npmjs.org/express cache-miss
+56 silly packumentCache corgi:https://registry.npmjs.org/form-data cache-miss
+57 silly packumentCache corgi:https://registry.npmjs.org/got cache-miss
+58 silly packumentCache corgi:https://registry.npmjs.org/js-yaml cache-miss
+59 silly packumentCache corgi:https://registry.npmjs.org/jsonata cache-miss
+60 silly packumentCache corgi:https://registry.npmjs.org/semver cache-miss
+61 silly packumentCache corgi:https://registry.npmjs.org/moment-timezone cache-miss
+62 silly packumentCache corgi:https://registry.npmjs.org/multer cache-miss
+63 silly packumentCache corgi:https://registry.npmjs.org/nodemailer cache-miss
+64 silly packumentCache corgi:https://registry.npmjs.org/on-headers cache-miss
+65 silly packumentCache corgi:https://registry.npmjs.org/passport cache-miss
+66 silly packumentCache corgi:https://registry.npmjs.org/path-to-regexp cache-miss
+67 silly packumentCache corgi:https://registry.npmjs.org/send cache-miss
+68 silly packumentCache corgi:https://registry.npmjs.org/serve-static cache-miss
+69 silly packumentCache corgi:https://registry.npmjs.org/tar cache-miss
+70 silly packumentCache corgi:https://registry.npmjs.org/tough-cookie cache-miss
+71 silly packumentCache corgi:https://registry.npmjs.org/xml2js cache-miss
+72 http fetch GET 200 https://registry.npmjs.org/js-yaml 621ms (cache hit)
+73 silly packumentCache corgi:https://registry.npmjs.org/js-yaml set size:58533 disposed:false
+74 http fetch GET 200 https://registry.npmjs.org/form-data 630ms (cache hit)
+75 silly packumentCache corgi:https://registry.npmjs.org/form-data set size:51426 disposed:false
+76 http fetch GET 200 https://registry.npmjs.org/on-headers 626ms (cache hit)
+77 silly packumentCache corgi:https://registry.npmjs.org/on-headers set size:4386 disposed:false
+78 http fetch GET 200 https://registry.npmjs.org/semver 630ms (cache hit)
+79 silly packumentCache corgi:https://registry.npmjs.org/semver set size:95618 disposed:false
+80 http fetch GET 200 https://registry.npmjs.org/axios 641ms (cache hit)
+81 silly packumentCache corgi:https://registry.npmjs.org/axios set size:262593 disposed:false
+82 http fetch GET 200 https://registry.npmjs.org/body-parser 753ms (cache revalidated)
+83 silly packumentCache corgi:https://registry.npmjs.org/body-parser set size:74404 disposed:false
+84 http fetch GET 200 https://registry.npmjs.org/tough-cookie 767ms (cache revalidated)
+85 silly packumentCache corgi:https://registry.npmjs.org/tough-cookie set size:55049 disposed:false
+86 http fetch GET 200 https://registry.npmjs.org/xml2js 811ms (cache revalidated)
+87 silly packumentCache corgi:https://registry.npmjs.org/xml2js set size:38207 disposed:false
+88 http fetch GET 200 https://registry.npmjs.org/dicer 826ms (cache revalidated)
+89 silly packumentCache corgi:https://registry.npmjs.org/dicer set size:12923 disposed:false
+90 http fetch GET 200 https://registry.npmjs.org/qs 830ms (cache revalidated)
+91 silly packumentCache corgi:https://registry.npmjs.org/qs set size:109860 disposed:false
+92 http fetch GET 200 https://registry.npmjs.org/serve-static 835ms (cache revalidated)
+93 silly packumentCache corgi:https://registry.npmjs.org/serve-static set size:56254 disposed:false
+94 http fetch GET 200 https://registry.npmjs.org/ws 852ms (cache revalidated)
+95 silly packumentCache corgi:https://registry.npmjs.org/ws set size:193390 disposed:false
+96 http fetch GET 200 https://registry.npmjs.org/cookie 853ms (cache revalidated)
+97 silly packumentCache corgi:https://registry.npmjs.org/cookie set size:22175 disposed:false
+98 http fetch GET 200 https://registry.npmjs.org/send 844ms (cache revalidated)
+99 silly packumentCache corgi:https://registry.npmjs.org/send set size:60926 disposed:false
+100 http fetch GET 200 https://registry.npmjs.org/moment-timezone 857ms (cache revalidated)
+101 silly packumentCache corgi:https://registry.npmjs.org/moment-timezone set size:75518 disposed:false
+102 http fetch GET 200 https://registry.npmjs.org/path-to-regexp 855ms (cache revalidated)
+103 silly packumentCache corgi:https://registry.npmjs.org/path-to-regexp set size:63416 disposed:false
+104 http fetch GET 200 https://registry.npmjs.org/jsonata 875ms (cache revalidated)
+105 silly packumentCache corgi:https://registry.npmjs.org/jsonata set size:62069 disposed:false
+106 http fetch GET 200 https://registry.npmjs.org/multer 874ms (cache revalidated)
+107 silly packumentCache corgi:https://registry.npmjs.org/multer set size:68672 disposed:false
+108 http fetch GET 200 https://registry.npmjs.org/passport 874ms (cache revalidated)
+109 silly packumentCache corgi:https://registry.npmjs.org/passport set size:25931 disposed:false
+110 http fetch GET 200 https://registry.npmjs.org/tar 908ms (cache updated)
+111 silly packumentCache corgi:https://registry.npmjs.org/tar set size:undefined disposed:false
+112 http fetch GET 200 https://registry.npmjs.org/got 921ms (cache updated)
+113 silly packumentCache corgi:https://registry.npmjs.org/got set size:undefined disposed:false
+114 http fetch GET 200 https://registry.npmjs.org/express 929ms (cache updated)
+115 silly packumentCache corgi:https://registry.npmjs.org/express set size:undefined disposed:false
+116 http fetch GET 200 https://registry.npmjs.org/nodemailer 960ms (cache updated)
+117 silly packumentCache corgi:https://registry.npmjs.org/nodemailer set size:undefined disposed:false
+118 silly packumentCache corgi:https://registry.npmjs.org/@node-red%2feditor-api cache-miss
+119 silly packumentCache corgi:https://registry.npmjs.org/@node-red%2fnodes cache-miss
+120 silly packumentCache corgi:https://registry.npmjs.org/mqtt cache-miss
+121 http fetch GET 200 https://registry.npmjs.org/@node-red%2fnodes 55ms (cache hit)
+122 silly packumentCache corgi:https://registry.npmjs.org/@node-red%2fnodes set size:203358 disposed:false
+123 http fetch GET 200 https://registry.npmjs.org/@node-red%2feditor-api 60ms (cache hit)
+124 silly packumentCache corgi:https://registry.npmjs.org/@node-red%2feditor-api set size:194424 disposed:false
+125 http fetch GET 200 https://registry.npmjs.org/mqtt 119ms (cache revalidated)
+126 silly packumentCache corgi:https://registry.npmjs.org/mqtt set size:327938 disposed:false
+127 silly packumentCache corgi:https://registry.npmjs.org/node-red-admin cache-miss
+128 http fetch GET 200 https://registry.npmjs.org/node-red-admin 31ms (cache hit)
+129 silly packumentCache corgi:https://registry.npmjs.org/node-red-admin set size:46771 disposed:false
+130 silly packumentCache corgi:https://registry.npmjs.org/cookie-parser cache-miss
+131 silly packumentCache corgi:https://registry.npmjs.org/express-session cache-miss
+132 http fetch GET 200 https://registry.npmjs.org/express-session 72ms (cache hit)
+133 silly packumentCache corgi:https://registry.npmjs.org/express-session set size:62752 disposed:false
+134 http fetch GET 200 https://registry.npmjs.org/cookie-parser 144ms (cache revalidated)
+135 silly packumentCache corgi:https://registry.npmjs.org/cookie-parser set size:15528 disposed:false
+136 silly packumentCache corgi:https://registry.npmjs.org/busboy cache-miss
+137 http fetch GET 200 https://registry.npmjs.org/busboy 152ms (cache revalidated)
+138 silly packumentCache corgi:https://registry.npmjs.org/busboy set size:31771 disposed:false
+139 silly packumentCache corgi:https://registry.npmjs.org/@node-red%2fruntime cache-miss
+140 silly packumentCache corgi:https://registry.npmjs.org/node-red cache-miss
+141 http fetch GET 200 https://registry.npmjs.org/node-red 58ms (cache hit)
+142 silly packumentCache corgi:https://registry.npmjs.org/node-red set size:325129 disposed:false
+143 http fetch GET 200 https://registry.npmjs.org/@node-red%2fruntime 201ms (cache revalidated)
+144 silly packumentCache corgi:https://registry.npmjs.org/@node-red%2fruntime set size:160090 disposed:false
+145 silly packumentCache corgi:https://registry.npmjs.org/@node-red%2futil cache-miss
+146 http fetch GET 200 https://registry.npmjs.org/@node-red%2futil 143ms (cache revalidated)
+147 silly packumentCache corgi:https://registry.npmjs.org/@node-red%2futil set size:155622 disposed:false
+148 silly packumentCache corgi:https://registry.npmjs.org/@mapbox%2fnode-pre-gyp cache-miss
+149 silly packumentCache corgi:https://registry.npmjs.org/@node-red%2fregistry cache-miss
+150 http fetch GET 200 https://registry.npmjs.org/@mapbox%2fnode-pre-gyp 246ms (cache revalidated)
+151 silly packumentCache corgi:https://registry.npmjs.org/@mapbox%2fnode-pre-gyp set size:38592 disposed:false
+152 http fetch GET 200 https://registry.npmjs.org/@node-red%2fregistry 247ms (cache revalidated)
+153 silly packumentCache corgi:https://registry.npmjs.org/@node-red%2fregistry set size:152275 disposed:false
+154 silly packumentCache corgi:https://registry.npmjs.org/utf7 cache-miss
+155 http fetch GET 200 https://registry.npmjs.org/utf7 35ms (cache hit)
+156 silly packumentCache corgi:https://registry.npmjs.org/utf7 set size:1637 disposed:false
+157 silly packumentCache corgi:https://registry.npmjs.org/node-red-contrib-email cache-miss
+158 silly packumentCache corgi:https://registry.npmjs.org/node-red-contrib-email-dynamic cache-miss
+159 silly packumentCache corgi:https://registry.npmjs.org/mailparser cache-miss
+160 silly packumentCache corgi:https://registry.npmjs.org/node-red-node-email cache-miss
+161 silly packumentCache corgi:https://registry.npmjs.org/smtp-server cache-miss
+162 http fetch GET 200 https://registry.npmjs.org/smtp-server 130ms (cache updated)
+163 silly packumentCache corgi:https://registry.npmjs.org/smtp-server set size:undefined disposed:false
+164 http fetch GET 200 https://registry.npmjs.org/mailparser 154ms (cache updated)
+165 silly packumentCache corgi:https://registry.npmjs.org/mailparser set size:undefined disposed:false
+166 http fetch GET 200 https://registry.npmjs.org/node-red-node-email 187ms (cache revalidated)
+167 silly packumentCache corgi:https://registry.npmjs.org/node-red-node-email set size:114375 disposed:false
+168 http fetch GET 200 https://registry.npmjs.org/node-red-contrib-email 751ms (cache revalidated)
+169 silly packumentCache corgi:https://registry.npmjs.org/node-red-contrib-email set size:8295 disposed:false
+170 http fetch GET 200 https://registry.npmjs.org/node-red-contrib-email-dynamic 754ms (cache revalidated)
+171 silly packumentCache corgi:https://registry.npmjs.org/node-red-contrib-email-dynamic set size:1443 disposed:false
+172 silly packumentCache corgi:https://registry.npmjs.org/imap cache-miss
+173 http fetch GET 200 https://registry.npmjs.org/imap 26ms (cache hit)
+174 silly packumentCache corgi:https://registry.npmjs.org/imap set size:28060 disposed:false
+175 silly ADD node_modules/utf7
+176 silly ADD node_modules/utf7/node_modules/semver
+177 silly ADD node_modules/imap
+178 silly ADD node_modules/imap/node_modules/string_decoder
+179 silly ADD node_modules/imap/node_modules/isarray
+180 silly ADD node_modules/imap/node_modules/readable-stream
+181 verbose cwd /data
+182 verbose os Linux 6.6.87.2-microsoft-standard-WSL2
+183 verbose node v20.19.0
+184 verbose npm  v10.8.2
+185 verbose exit 0
+186 info ok

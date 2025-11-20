@@ -1,0 +1,208 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@10.8.2
+2 info using node@v20.19.0
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/.npmrc
+5 silly config load:file:/usr/src/node-red/.npmrc
+6 silly config load:file:/usr/local/etc/npmrc
+7 verbose title npm remove node-red-contrib-digitaloak-mqtt
+8 verbose argv "remove" "--no-audit" "--no-update-notifier" "--no-fund" "--save" "node-red-contrib-digitaloak-mqtt"
+9 verbose logfile logs-max:10 dir:/data/.npm/_logs/2025-10-22T13_03_16_109Z-
+10 verbose logfile /data/.npm/_logs/2025-10-22T13_03_16_109Z-debug-0.log
+11 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+12 silly logfile start cleaning logs, removing 1 files
+13 silly logfile done cleaning log files
+14 silly idealTree buildDeps
+15 silly reify mark retired [ '/data/node_modules/agent-base' ]
+16 silly reify mark retired [ '/data/node_modules/async-limiter' ]
+17 silly reify mark retired [ '/data/node_modules/available-typed-arrays' ]
+18 silly reify mark retired [ '/data/node_modules/call-bind' ]
+19 silly reify mark retired [ '/data/node_modules/call-bind-apply-helpers' ]
+20 silly reify mark retired [ '/data/node_modules/call-bound' ]
+21 silly reify mark retired [ '/data/node_modules/d' ]
+22 silly reify mark retired [ '/data/node_modules/debug' ]
+23 silly reify mark retired [ '/data/node_modules/define-data-property' ]
+24 silly reify mark retired [ '/data/node_modules/dunder-proto' ]
+25 silly reify mark retired [ '/data/node_modules/es-define-property' ]
+26 silly reify mark retired [ '/data/node_modules/es-errors' ]
+27 silly reify mark retired [ '/data/node_modules/es-object-atoms' ]
+28 silly reify mark retired [ '/data/node_modules/es5-ext' ]
+29 silly reify mark retired [ '/data/node_modules/es6-iterator' ]
+30 silly reify mark retired [ '/data/node_modules/es6-map' ]
+31 silly reify mark retired [ '/data/node_modules/es6-promise' ]
+32 silly reify mark retired [ '/data/node_modules/es6-promisify' ]
+33 silly reify mark retired [ '/data/node_modules/es6-set' ]
+34 silly reify mark retired [ '/data/node_modules/es6-symbol' ]
+35 silly reify mark retired [ '/data/node_modules/esniff' ]
+36 silly reify mark retired [ '/data/node_modules/event-emitter' ]
+37 silly reify mark retired [ '/data/node_modules/ext' ]
+38 silly reify mark retired [ '/data/node_modules/for-each' ]
+39 silly reify mark retired [ '/data/node_modules/function-bind' ]
+40 silly reify mark retired [ '/data/node_modules/get-intrinsic' ]
+41 silly reify mark retired [ '/data/node_modules/get-proto' ]
+42 silly reify mark retired [ '/data/node_modules/gopd' ]
+43 silly reify mark retired [ '/data/node_modules/has-property-descriptors' ]
+44 silly reify mark retired [ '/data/node_modules/has-symbols' ]
+45 silly reify mark retired [ '/data/node_modules/has-tostringtag' ]
+46 silly reify mark retired [ '/data/node_modules/hasown' ]
+47 silly reify mark retired [ '/data/node_modules/https-proxy-agent' ]
+48 silly reify mark retired [ '/data/node_modules/is-arguments' ]
+49 silly reify mark retired [ '/data/node_modules/is-callable' ]
+50 silly reify mark retired [ '/data/node_modules/is-generator-function' ]
+51 silly reify mark retired [ '/data/node_modules/is-regex' ]
+52 silly reify mark retired [ '/data/node_modules/is-typed-array' ]
+53 silly reify mark retired [ '/data/node_modules/math-intrinsics' ]
+54 silly reify mark retired [
+54 silly reify   '/data/node_modules/mqtt',
+54 silly reify   '/data/node_modules/.bin/mqtt',
+54 silly reify   '/data/node_modules/.bin/mqtt_pub',
+54 silly reify   '/data/node_modules/.bin/mqtt_sub'
+54 silly reify ]
+55 silly reify mark retired [ '/data/node_modules/next-tick' ]
+56 silly reify mark retired [ '/data/node_modules/node-red-contrib-digitaloak-mqtt' ]
+57 silly reify mark retired [ '/data/node_modules/object-inspect' ]
+58 silly reify mark retired [ '/data/node_modules/possible-typed-array-names' ]
+59 silly reify mark retired [ '/data/node_modules/punycode' ]
+60 silly reify mark retired [ '/data/node_modules/qs' ]
+61 silly reify mark retired [ '/data/node_modules/safe-regex-test' ]
+62 silly reify mark retired [ '/data/node_modules/set-function-length' ]
+63 silly reify mark retired [ '/data/node_modules/side-channel' ]
+64 silly reify mark retired [ '/data/node_modules/side-channel-list' ]
+65 silly reify mark retired [ '/data/node_modules/side-channel-map' ]
+66 silly reify mark retired [ '/data/node_modules/side-channel-weakmap' ]
+67 silly reify mark retired [ '/data/node_modules/type' ]
+68 silly reify mark retired [ '/data/node_modules/ultron' ]
+69 silly reify mark retired [ '/data/node_modules/url' ]
+70 silly reify mark retired [ '/data/node_modules/util' ]
+71 silly reify mark retired [ '/data/node_modules/websocket-stream' ]
+72 silly reify mark retired [ '/data/node_modules/which-typed-array' ]
+73 silly reify mark retired [ '/data/node_modules/ws' ]
+74 silly reify moves {
+74 silly reify   '/data/node_modules/agent-base': '/data/node_modules/.agent-base-YVqTSI8f',
+74 silly reify   '/data/node_modules/async-limiter': '/data/node_modules/.async-limiter-WYbqyEGa',
+74 silly reify   '/data/node_modules/available-typed-arrays': '/data/node_modules/.available-typed-arrays-F0pPOmmD',
+74 silly reify   '/data/node_modules/call-bind': '/data/node_modules/.call-bind-Yv9jQlrb',
+74 silly reify   '/data/node_modules/call-bind-apply-helpers': '/data/node_modules/.call-bind-apply-helpers-tgniXrFt',
+74 silly reify   '/data/node_modules/call-bound': '/data/node_modules/.call-bound-9wgF2ur3',
+74 silly reify   '/data/node_modules/d': '/data/node_modules/.d-55QNZLwA',
+74 silly reify   '/data/node_modules/debug': '/data/node_modules/.debug-oMLg6EQG',
+74 silly reify   '/data/node_modules/define-data-property': '/data/node_modules/.define-data-property-VKT18bAJ',
+74 silly reify   '/data/node_modules/dunder-proto': '/data/node_modules/.dunder-proto-Q8sTm0ki',
+74 silly reify   '/data/node_modules/es-define-property': '/data/node_modules/.es-define-property-IEVHdp4Z',
+74 silly reify   '/data/node_modules/es-errors': '/data/node_modules/.es-errors-2sMHs2CU',
+74 silly reify   '/data/node_modules/es-object-atoms': '/data/node_modules/.es-object-atoms-CvCWAMFj',
+74 silly reify   '/data/node_modules/es5-ext': '/data/node_modules/.es5-ext-CTOHj2Qu',
+74 silly reify   '/data/node_modules/es6-iterator': '/data/node_modules/.es6-iterator-1Goxiy8R',
+74 silly reify   '/data/node_modules/es6-map': '/data/node_modules/.es6-map-5vYd71i8',
+74 silly reify   '/data/node_modules/es6-promise': '/data/node_modules/.es6-promise-9FpoAX3J',
+74 silly reify   '/data/node_modules/es6-promisify': '/data/node_modules/.es6-promisify-3VCI85jt',
+74 silly reify   '/data/node_modules/es6-set': '/data/node_modules/.es6-set-aTHfnQvE',
+74 silly reify   '/data/node_modules/es6-symbol': '/data/node_modules/.es6-symbol-33piah3Z',
+74 silly reify   '/data/node_modules/esniff': '/data/node_modules/.esniff-JfN6G0nY',
+74 silly reify   '/data/node_modules/event-emitter': '/data/node_modules/.event-emitter-9NUgl7ws',
+74 silly reify   '/data/node_modules/ext': '/data/node_modules/.ext-DxT57QzC',
+74 silly reify   '/data/node_modules/for-each': '/data/node_modules/.for-each-y9KLnFPy',
+74 silly reify   '/data/node_modules/function-bind': '/data/node_modules/.function-bind-8LMoDvai',
+74 silly reify   '/data/node_modules/get-intrinsic': '/data/node_modules/.get-intrinsic-y5kFVvYI',
+74 silly reify   '/data/node_modules/get-proto': '/data/node_modules/.get-proto-l2byuRli',
+74 silly reify   '/data/node_modules/gopd': '/data/node_modules/.gopd-mT5X6yfP',
+74 silly reify   '/data/node_modules/has-property-descriptors': '/data/node_modules/.has-property-descriptors-Zkw8eNQa',
+74 silly reify   '/data/node_modules/has-symbols': '/data/node_modules/.has-symbols-6o5YgQnL',
+74 silly reify   '/data/node_modules/has-tostringtag': '/data/node_modules/.has-tostringtag-udI1voPK',
+74 silly reify   '/data/node_modules/hasown': '/data/node_modules/.hasown-7vUUDMas',
+74 silly reify   '/data/node_modules/https-proxy-agent': '/data/node_modules/.https-proxy-agent-BrVHzWxz',
+74 silly reify   '/data/node_modules/is-arguments': '/data/node_modules/.is-arguments-iYSoWRpV',
+74 silly reify   '/data/node_modules/is-callable': '/data/node_modules/.is-callable-yfiNyIDr',
+74 silly reify   '/data/node_modules/is-generator-function': '/data/node_modules/.is-generator-function-dW0JnBcx',
+74 silly reify   '/data/node_modules/is-regex': '/data/node_modules/.is-regex-fftmJuyv',
+74 silly reify   '/data/node_modules/is-typed-array': '/data/node_modules/.is-typed-array-zKAY927Q',
+74 silly reify   '/data/node_modules/math-intrinsics': '/data/node_modules/.math-intrinsics-fi0YAEMp',
+74 silly reify   '/data/node_modules/mqtt': '/data/node_modules/.mqtt-Fvk6pBRL',
+74 silly reify   '/data/node_modules/.bin/mqtt': '/data/node_modules/.bin/.mqtt-956V6Mdl',
+74 silly reify   '/data/node_modules/.bin/mqtt_pub': '/data/node_modules/.bin/.mqtt_pub-dY0oo1ub',
+74 silly reify   '/data/node_modules/.bin/mqtt_sub': '/data/node_modules/.bin/.mqtt_sub-RELOPLmq',
+74 silly reify   '/data/node_modules/next-tick': '/data/node_modules/.next-tick-W0WaXro2',
+74 silly reify   '/data/node_modules/node-red-contrib-digitaloak-mqtt': '/data/node_modules/.node-red-contrib-digitaloak-mqtt-npnWAmh5',
+74 silly reify   '/data/node_modules/object-inspect': '/data/node_modules/.object-inspect-geCx57bY',
+74 silly reify   '/data/node_modules/possible-typed-array-names': '/data/node_modules/.possible-typed-array-names-1tyaQ2BI',
+74 silly reify   '/data/node_modules/punycode': '/data/node_modules/.punycode-gyQTLwWT',
+74 silly reify   '/data/node_modules/qs': '/data/node_modules/.qs-t2ewpGYR',
+74 silly reify   '/data/node_modules/safe-regex-test': '/data/node_modules/.safe-regex-test-DUJyYzzl',
+74 silly reify   '/data/node_modules/set-function-length': '/data/node_modules/.set-function-length-hVqCwJXi',
+74 silly reify   '/data/node_modules/side-channel': '/data/node_modules/.side-channel-UuWWjaWY',
+74 silly reify   '/data/node_modules/side-channel-list': '/data/node_modules/.side-channel-list-Xvl0I2r0',
+74 silly reify   '/data/node_modules/side-channel-map': '/data/node_modules/.side-channel-map-0ahIv0ql',
+74 silly reify   '/data/node_modules/side-channel-weakmap': '/data/node_modules/.side-channel-weakmap-CWavPK5F',
+74 silly reify   '/data/node_modules/type': '/data/node_modules/.type-wQnauIyE',
+74 silly reify   '/data/node_modules/ultron': '/data/node_modules/.ultron-bwq0xtHM',
+74 silly reify   '/data/node_modules/url': '/data/node_modules/.url-yXBKk8T9',
+74 silly reify   '/data/node_modules/util': '/data/node_modules/.util-J4uQHpu4',
+74 silly reify   '/data/node_modules/websocket-stream': '/data/node_modules/.websocket-stream-Jy50LyM0',
+74 silly reify   '/data/node_modules/which-typed-array': '/data/node_modules/.which-typed-array-Zcm1Uc2I',
+74 silly reify   '/data/node_modules/ws': '/data/node_modules/.ws-B5PabsSn'
+74 silly reify }
+75 silly REMOVE node_modules/ws
+76 silly REMOVE node_modules/which-typed-array
+77 silly REMOVE node_modules/websocket-stream
+78 silly REMOVE node_modules/util
+79 silly REMOVE node_modules/url
+80 silly REMOVE node_modules/ultron
+81 silly REMOVE node_modules/type
+82 silly REMOVE node_modules/side-channel-weakmap
+83 silly REMOVE node_modules/side-channel-map
+84 silly REMOVE node_modules/side-channel-list
+85 silly REMOVE node_modules/side-channel
+86 silly REMOVE node_modules/set-function-length
+87 silly REMOVE node_modules/safe-regex-test
+88 silly REMOVE node_modules/qs
+89 silly REMOVE node_modules/punycode
+90 silly REMOVE node_modules/possible-typed-array-names
+91 silly REMOVE node_modules/object-inspect
+92 silly REMOVE node_modules/node-red-contrib-digitaloak-mqtt
+93 silly REMOVE node_modules/next-tick
+94 silly REMOVE node_modules/mqtt
+95 silly REMOVE node_modules/math-intrinsics
+96 silly REMOVE node_modules/is-typed-array
+97 silly REMOVE node_modules/is-regex
+98 silly REMOVE node_modules/is-generator-function
+99 silly REMOVE node_modules/is-callable
+100 silly REMOVE node_modules/is-arguments
+101 silly REMOVE node_modules/https-proxy-agent
+102 silly REMOVE node_modules/hasown
+103 silly REMOVE node_modules/has-tostringtag
+104 silly REMOVE node_modules/has-symbols
+105 silly REMOVE node_modules/has-property-descriptors
+106 silly REMOVE node_modules/gopd
+107 silly REMOVE node_modules/get-proto
+108 silly REMOVE node_modules/get-intrinsic
+109 silly REMOVE node_modules/function-bind
+110 silly REMOVE node_modules/for-each
+111 silly REMOVE node_modules/ext
+112 silly REMOVE node_modules/event-emitter
+113 silly REMOVE node_modules/esniff
+114 silly REMOVE node_modules/es6-symbol
+115 silly REMOVE node_modules/es6-set
+116 silly REMOVE node_modules/es6-promisify
+117 silly REMOVE node_modules/es6-promise
+118 silly REMOVE node_modules/es6-map
+119 silly REMOVE node_modules/es6-iterator
+120 silly REMOVE node_modules/es5-ext
+121 silly REMOVE node_modules/es-object-atoms
+122 silly REMOVE node_modules/es-errors
+123 silly REMOVE node_modules/es-define-property
+124 silly REMOVE node_modules/dunder-proto
+125 silly REMOVE node_modules/define-data-property
+126 silly REMOVE node_modules/debug
+127 silly REMOVE node_modules/d
+128 silly REMOVE node_modules/call-bound
+129 silly REMOVE node_modules/call-bind-apply-helpers
+130 silly REMOVE node_modules/call-bind
+131 silly REMOVE node_modules/available-typed-arrays
+132 silly REMOVE node_modules/async-limiter
+133 silly REMOVE node_modules/agent-base
+134 verbose cwd /data
+135 verbose os Linux 6.6.87.2-microsoft-standard-WSL2
+136 verbose node v20.19.0
+137 verbose npm  v10.8.2
+138 verbose exit 0
+139 info ok

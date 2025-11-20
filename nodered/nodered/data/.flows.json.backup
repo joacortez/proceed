@@ -1,0 +1,1062 @@
+[
+    {
+        "id": "programatic flow",
+        "type": "tab",
+        "label": "Service Task Flow",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2e2a5a4fd734ce05",
+        "type": "group",
+        "z": "programatic flow",
+        "name": "Send Request",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "http-in",
+            "cc2c6a3774b69b5b",
+            "3c9ed1c17d843820",
+            "cd36554dbf670106",
+            "0ccdbf8e2a254b6d",
+            "fa02eecd63a2e8f5",
+            "c1162a59df13061b"
+        ],
+        "x": 54,
+        "y": 65.99999618530273,
+        "w": 1535.9999160766602,
+        "h": 614
+    },
+    {
+        "id": "d741d558b502f072",
+        "type": "group",
+        "z": "programatic flow",
+        "name": "Receive Request",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "34a765607ef3f3ce",
+            "6c25b4b2fc955108",
+            "e2c9805f8d215e51",
+            "41f4dec48b4ffb8a",
+            "c701f580f988993a",
+            "4da2d8581ab7ae30",
+            "6185d38af57c802b",
+            "1afe2d9608d31bce",
+            "caf605331b1302b3",
+            "d768b3dad53ada02"
+        ],
+        "x": 54,
+        "y": 773,
+        "w": 2012,
+        "h": 768
+    },
+    {
+        "id": "3c9ed1c17d843820",
+        "type": "group",
+        "z": "programatic flow",
+        "g": "2e2a5a4fd734ce05",
+        "name": "Send HTTP Request",
+        "style": {
+            "fill": "#ffffbf",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "http-out",
+            "326904422d82ce51",
+            "8d9f274637b26723",
+            "30a37423202dcafd"
+        ],
+        "x": 631.9999160766602,
+        "y": 91.99999618530273,
+        "w": 914.0000839233398,
+        "h": 109.00000381469727
+    },
+    {
+        "id": "cd36554dbf670106",
+        "type": "group",
+        "z": "programatic flow",
+        "g": "2e2a5a4fd734ce05",
+        "name": "Send MQTT message",
+        "style": {
+            "label": true,
+            "fill": "#7fb7df",
+            "color": "#000000"
+        },
+        "nodes": [
+            "8fdc533f0233c380",
+            "a361d6d25dfc305d",
+            "986360c528123cf5"
+        ],
+        "x": 631.9999160766602,
+        "y": 211.99999618530273,
+        "w": 657.0000762939453,
+        "h": 109.0000057220459
+    },
+    {
+        "id": "fa02eecd63a2e8f5",
+        "type": "group",
+        "z": "programatic flow",
+        "g": "2e2a5a4fd734ce05",
+        "name": "Invalid protocol",
+        "style": {
+            "fill": "#ff7f7f",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "85bb7e3d6c9d495a",
+            "7bda682b91a7ed72",
+            "34f3cf30fe62dda3"
+        ],
+        "x": 631.9999160766602,
+        "y": 531.9999961853027,
+        "w": 412,
+        "h": 122
+    },
+    {
+        "id": "0ccdbf8e2a254b6d",
+        "type": "group",
+        "z": "programatic flow",
+        "g": "2e2a5a4fd734ce05",
+        "name": "Send SMTP",
+        "style": {
+            "label": true,
+            "color": "#000000",
+            "fill": "#dbcbe7"
+        },
+        "nodes": [
+            "21e185dded19e0ef",
+            "b41a1ca01fcb7507",
+            "ada0f7b76c8b4416",
+            "400143e4daf67935",
+            "c8a7283479088e6a",
+            "ba99237a21e2a373"
+        ],
+        "x": 631.9999160766602,
+        "y": 331.99999618530273,
+        "w": 932,
+        "h": 182
+    },
+    {
+        "id": "e2c9805f8d215e51",
+        "type": "group",
+        "z": "programatic flow",
+        "g": "d741d558b502f072",
+        "name": "Invalid protocol",
+        "style": {
+            "fill": "#ff7f7f",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "b041d3e719296962",
+            "2c0e45b00674b7e8",
+            "df7ec6d19ecffd01"
+        ],
+        "x": 754,
+        "y": 1379,
+        "w": 412,
+        "h": 122
+    },
+    {
+        "id": "41f4dec48b4ffb8a",
+        "type": "group",
+        "z": "programatic flow",
+        "g": "d741d558b502f072",
+        "name": "Receive HTTP Request",
+        "style": {
+            "fill": "#ffffbf",
+            "label": true,
+            "color": "#000000"
+        },
+        "nodes": [
+            "104ab12b5f445f38",
+            "c760022e07f9014f",
+            "6f6eeb352a2f16f3",
+            "0c3fb375525aee7b",
+            "e9e790f647193da9"
+        ],
+        "x": 754,
+        "y": 799,
+        "w": 952,
+        "h": 122
+    },
+    {
+        "id": "1afe2d9608d31bce",
+        "type": "group",
+        "z": "programatic flow",
+        "g": "d741d558b502f072",
+        "name": "Receive MQTT message",
+        "style": {
+            "label": true,
+            "fill": "#7fb7df",
+            "color": "#000000"
+        },
+        "nodes": [
+            "7c4021b1e56562a0",
+            "2878fc7db489ccfc",
+            "da83cab6be4c8a1e"
+        ],
+        "x": 757.0000076293945,
+        "y": 999,
+        "w": 448.99999237060547,
+        "h": 142
+    },
+    {
+        "id": "caf605331b1302b3",
+        "type": "group",
+        "z": "programatic flow",
+        "g": "d741d558b502f072",
+        "name": "Receive IMAP",
+        "style": {
+            "label": true,
+            "color": "#000000",
+            "fill": "#dbcbe7"
+        },
+        "nodes": [
+            "d12299c79c4bf186",
+            "3bfd9e5b0930e3fc",
+            "bf4c9a9dcf3384d4"
+        ],
+        "x": 754,
+        "y": 1159,
+        "w": 452,
+        "h": 142
+    },
+    {
+        "id": "http-in",
+        "type": "http in",
+        "z": "programatic flow",
+        "g": "2e2a5a4fd734ce05",
+        "name": "Receive Data",
+        "url": "/send",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 300,
+        "wires": [
+            [
+                "cc2c6a3774b69b5b",
+                "c1162a59df13061b"
+            ]
+        ]
+    },
+    {
+        "id": "http-out",
+        "type": "http response",
+        "z": "programatic flow",
+        "g": "3c9ed1c17d843820",
+        "name": "HTTP Response",
+        "statusCode": "200",
+        "headers": {},
+        "x": 1440,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "85bb7e3d6c9d495a",
+        "type": "debug",
+        "z": "programatic flow",
+        "g": "fa02eecd63a2e8f5",
+        "name": "Invalid protocol",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "\"Invalid protocol: '\" & payload.protocol & \"'. Discarding message\" ",
+        "targetType": "jsonata",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 747.9999160766602,
+        "y": 612.9999961853027,
+        "wires": []
+    },
+    {
+        "id": "cc2c6a3774b69b5b",
+        "type": "switch",
+        "z": "programatic flow",
+        "g": "2e2a5a4fd734ce05",
+        "name": "POST switch",
+        "property": "payload.protocol",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "http",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "mqtt",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "smtp",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 4,
+        "x": 370,
+        "y": 300,
+        "wires": [
+            [
+                "8d9f274637b26723"
+            ],
+            [
+                "986360c528123cf5"
+            ],
+            [
+                "ba99237a21e2a373"
+            ],
+            [
+                "85bb7e3d6c9d495a",
+                "7bda682b91a7ed72"
+            ]
+        ]
+    },
+    {
+        "id": "34f3cf30fe62dda3",
+        "type": "http response",
+        "z": "programatic flow",
+        "g": "fa02eecd63a2e8f5",
+        "name": "Return error",
+        "statusCode": "400",
+        "headers": {},
+        "x": 947.9999160766602,
+        "y": 572.9999961853027,
+        "wires": []
+    },
+    {
+        "id": "7bda682b91a7ed72",
+        "type": "change",
+        "z": "programatic flow",
+        "g": "fa02eecd63a2e8f5",
+        "name": "Added error message",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.error.msg",
+                "pt": "msg",
+                "to": "Invalid Protocol",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 757.9999160766602,
+        "y": 572.9999961853027,
+        "wires": [
+            [
+                "34f3cf30fe62dda3"
+            ]
+        ]
+    },
+    {
+        "id": "21e185dded19e0ef",
+        "type": "email-dynamic",
+        "z": "programatic flow",
+        "g": "0ccdbf8e2a254b6d",
+        "name": "",
+        "smtpServer": "",
+        "smtpPort": "",
+        "smtpUser": "",
+        "smtpPass": "",
+        "secure": false,
+        "tlsRejectUnauthorized": false,
+        "x": 1017.9999160766602,
+        "y": 372.99999618530273,
+        "wires": [
+            [
+                "ada0f7b76c8b4416"
+            ]
+        ]
+    },
+    {
+        "id": "a361d6d25dfc305d",
+        "type": "http response",
+        "z": "programatic flow",
+        "g": "cd36554dbf670106",
+        "name": "HTTP Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 1182.9999923706055,
+        "y": 280.00000190734863,
+        "wires": []
+    },
+    {
+        "id": "8fdc533f0233c380",
+        "type": "function",
+        "z": "programatic flow",
+        "g": "cd36554dbf670106",
+        "name": "mqtt out",
+        "func": "// Extract connection info from the message\nconst brokerUrl = msg.payload.host;\nconst topic = msg.payload.topic;\nconst payload = msg.payload.message;\nconst qos = msg.payload.qos || 0;\n\nconst options = {\n    clientId: msg.clientId || ('node-red-' + Math.random().toString(16).substr(2, 8)),\n    username: msg.username,\n    password: msg.password,\n    clean: true,\n    reconnectPeriod: 0,\n    connectTimeout: 5000\n};\n\nnode.log(`MQTT: connecting to ${brokerUrl} as ${options.clientId}`);\n\nsetTimeout(() => {\n    if (!finished) {\n        node.error(\"MQTT: timeout waiting for publish/connection\");\n        client.end(() => finish(\"timeout\", 408, \"Timeout waiting for publish/connection\"));\n    }\n}, 8000);\n\nconst client = mqtt.connect(brokerUrl, options);\nlet finished = false;\n\nfunction finish(status, code, error) {\n    if (finished) return;\n    finished = true;\n\n    msg.status = status;\n    msg.statusCode = code;\n    msg.error = error || null;\n    msg.timestamp = new Date().toISOString();\n\n    node.send(msg);\n    node.done();\n}\n\nclient.on('connect', () => {\n    node.log(`MQTT: connected → publishing to topic \"${topic}\"`);\n\n    client.publish(topic, typeof payload === 'object' ? JSON.stringify(payload) : String(payload), { qos }, (err) => {\n        if (err) {\n            node.error(`MQTT: publish error - ${err.message}`);\n            client.end(() => finish(\"error\", 400, err.message));\n        } else {\n            node.log(`MQTT: publish success to topic \"${topic}\"`);\n            client.end(() => finish(\"success\", 200));\n        }\n    });\n});\n\nclient.on('error', (err) => {\n    node.error(`MQTT: connection error - ${err.message}`);\n    client.end(() => finish(\"error\", 400, err.message));\n});\n\nclient.on('close', () => {\n    node.log(\"MQTT: connection closed\");\n});\n\n\n\n// Prevent Node-RED from auto-sending msg immediately\nreturn;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "mqtt",
+                "module": "mqtt"
+            }
+        ],
+        "x": 997.9999160766602,
+        "y": 252.99999618530273,
+        "wires": [
+            [
+                "a361d6d25dfc305d"
+            ]
+        ]
+    },
+    {
+        "id": "326904422d82ce51",
+        "type": "http request",
+        "z": "programatic flow",
+        "g": "3c9ed1c17d843820",
+        "name": "",
+        "method": "use",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 987.9999160766602,
+        "y": 132.99999618530273,
+        "wires": [
+            [
+                "30a37423202dcafd"
+            ]
+        ]
+    },
+    {
+        "id": "b41a1ca01fcb7507",
+        "type": "http response",
+        "z": "programatic flow",
+        "g": "0ccdbf8e2a254b6d",
+        "name": "HTTP Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 1457.9999160766602,
+        "y": 412.99999618530273,
+        "wires": []
+    },
+    {
+        "id": "34a765607ef3f3ce",
+        "type": "http in",
+        "z": "programatic flow",
+        "g": "d741d558b502f072",
+        "name": "Receive Data",
+        "url": "/recv",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 1160,
+        "wires": [
+            [
+                "6c25b4b2fc955108"
+            ]
+        ]
+    },
+    {
+        "id": "ada0f7b76c8b4416",
+        "type": "function",
+        "z": "programatic flow",
+        "g": "0ccdbf8e2a254b6d",
+        "name": "prepare response",
+        "func": "if (msg.payload.accepted === undefined || msg.payload.accepted.length == 0) {\n    // Sending was unsuccesful\n    let new_payload = {}\n\n    return msg\n}\n\n// Sending was successful\nlet new_payload = msg.payload.response\nmsg.statusCode = 200\n\nmsg.payload = new_payload\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1227.9999160766602,
+        "y": 372.99999618530273,
+        "wires": [
+            [
+                "b41a1ca01fcb7507"
+            ]
+        ]
+    },
+    {
+        "id": "400143e4daf67935",
+        "type": "catch",
+        "z": "programatic flow",
+        "g": "0ccdbf8e2a254b6d",
+        "name": "Catch stmp errors",
+        "scope": "group",
+        "uncaught": true,
+        "x": 967.9999160766602,
+        "y": 472.99999618530273,
+        "wires": [
+            [
+                "c8a7283479088e6a"
+            ]
+        ]
+    },
+    {
+        "id": "c8a7283479088e6a",
+        "type": "change",
+        "z": "programatic flow",
+        "g": "0ccdbf8e2a254b6d",
+        "name": "Format error messaged",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.error.message",
+                "pt": "msg",
+                "to": "\"Error while trying to connect to smtp server: \" & error.message",
+                "tot": "jsonata",
+                "dc": true
+            },
+            {
+                "t": "set",
+                "p": "statusCode",
+                "pt": "msg",
+                "to": "400",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1207.9999160766602,
+        "y": 472.99999618530273,
+        "wires": [
+            [
+                "b41a1ca01fcb7507"
+            ]
+        ]
+    },
+    {
+        "id": "6c25b4b2fc955108",
+        "type": "switch",
+        "z": "programatic flow",
+        "g": "d741d558b502f072",
+        "name": "POST switch",
+        "property": "payload.protocol",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "http",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "mqtt",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "smtp",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 4,
+        "x": 370,
+        "y": 1160,
+        "wires": [
+            [
+                "104ab12b5f445f38"
+            ],
+            [
+                "da83cab6be4c8a1e"
+            ],
+            [
+                "3bfd9e5b0930e3fc"
+            ],
+            [
+                "2c0e45b00674b7e8",
+                "b041d3e719296962"
+            ]
+        ]
+    },
+    {
+        "id": "b041d3e719296962",
+        "type": "debug",
+        "z": "programatic flow",
+        "g": "e2c9805f8d215e51",
+        "name": "Invalid protocol",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "\"Invalid protocol: '\" & payload.protocol & \"'. Discarding message\" ",
+        "targetType": "jsonata",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 870,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "2c0e45b00674b7e8",
+        "type": "change",
+        "z": "programatic flow",
+        "g": "e2c9805f8d215e51",
+        "name": "Added error message",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Invalid Protocol",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 880,
+        "y": 1420,
+        "wires": [
+            [
+                "df7ec6d19ecffd01"
+            ]
+        ]
+    },
+    {
+        "id": "df7ec6d19ecffd01",
+        "type": "http response",
+        "z": "programatic flow",
+        "g": "e2c9805f8d215e51",
+        "name": "Return error",
+        "statusCode": "400",
+        "headers": {},
+        "x": 1070,
+        "y": 1420,
+        "wires": []
+    },
+    {
+        "id": "104ab12b5f445f38",
+        "type": "function",
+        "z": "programatic flow",
+        "g": "41f4dec48b4ffb8a",
+        "name": "Validate http in",
+        "func": "node.log(\"HTTP in selected.\")\n\nconst required = [\n  \"url\",\n  \"method\",\n  \"timeout\",\n];\n\nlet missing = [];\nrequired.forEach(key => {\n  if (msg.payload == null || msg.payload[key] === undefined) {\n    missing.push(key);\n  }\n});\n\nif (missing.length > 0) {\n  let error_msg = \"Missing required payload fields: \" + missing.join(\", \")\n  node.error(error_msg);\n  msg.statusCode = 400;\n  msg.payload = {\n    status: \"error\",\n    error: {\n      code: \"bad_request\",\n      message: error_msg,\n    },\n  };\n  return [msg, null];\n}\nconst url = msg.payload.url;\nconst waiting_request_name = \"waiting_\" + url\nconst ready_request_name = \"ready_\" + url\n\nlet waiting_request = flow.get(waiting_request_name) || false\nlet ready_request = flow.get(ready_request_name) || false\n\nif (!!waiting_request || !!ready_request) {\n  let error_msg = \"Url already in use: \" + url\n  node.error(error_msg);\n  msg.statusCode = 400;\n  msg.payload = {\n    status: \"error\",\n    error: {\n      code: \"bad_request\",\n      message: error_msg,\n    },\n  };\n  return [msg, null];\n}\n// --- Timeout Fallback ---\nconst timer = setTimeout(() => {\n  let request = flow.get(waiting_request_name) || false;\n  if (!!request) {\n    flow.set(waiting_request_name, null)\n\n    let error_msg = \"Timeout waiting for message\" + url\n    node.error(error_msg);\n\n    let timeoutMsg = {\n      id: url,\n      payload:\n      {\n        status: \"error\",\n        error: {\n          code: \"bad_request\",\n          message: error_msg,\n        },\n      },\n      statusCode: 408,\n    }\n    node.send([null, timeoutMsg]);\n  }\n}, msg.payload.timeout);\n\nflow.set(waiting_request_name, msg.payload)\nmsg.payload = url;\nmsg.statusCode = 200;\n\nnode.send([msg, null]);\n\n\nreturn;",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "// Code added here will be run when the\n// node is being stopped or re-deployed.\nlet keys = flow.keys()",
+        "libs": [],
+        "x": 860,
+        "y": 880,
+        "wires": [
+            [
+                "c760022e07f9014f"
+            ],
+            [
+                "d768b3dad53ada02"
+            ]
+        ]
+    },
+    {
+        "id": "c760022e07f9014f",
+        "type": "http response",
+        "z": "programatic flow",
+        "g": "41f4dec48b4ffb8a",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1030,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "6f6eeb352a2f16f3",
+        "type": "http in",
+        "z": "programatic flow",
+        "g": "41f4dec48b4ffb8a",
+        "name": "GET /listen catch all",
+        "url": "/listen/:id*",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 1270,
+        "y": 860,
+        "wires": [
+            [
+                "0c3fb375525aee7b"
+            ]
+        ]
+    },
+    {
+        "id": "0c3fb375525aee7b",
+        "type": "function",
+        "z": "programatic flow",
+        "g": "41f4dec48b4ffb8a",
+        "name": "http-in-filter",
+        "func": "let id = msg.req.params.id;\nlet request_name = \"waiting_\" + id;\nlet active = flow.get(request_name) || false;\n\nif (!active) {\n    msg.statusCode = 404;\n    msg.payload = {};\n    return [msg, null];\n}\n\nlet requestData = msg.payload;\n\nmsg.payload = {\n    data: requestData,\n    method: msg.req.method,\n    headers: msg.req.headers,\n    url: msg.req.url,\n    cookies: msg.req.cookies,\n};\nmsg.statusCode = 200;\n\nreturn [msg, { payload: msg.payload, statusCode: msg.statusCode, id: id }];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1470,
+        "y": 860,
+        "wires": [
+            [
+                "e9e790f647193da9"
+            ],
+            [
+                "d768b3dad53ada02"
+            ]
+        ]
+    },
+    {
+        "id": "e9e790f647193da9",
+        "type": "http response",
+        "z": "programatic flow",
+        "g": "41f4dec48b4ffb8a",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1630,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "c701f580f988993a",
+        "type": "http in",
+        "z": "programatic flow",
+        "g": "d741d558b502f072",
+        "name": "poll received data",
+        "url": "/results/:id*",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 1500,
+        "wires": [
+            [
+                "4da2d8581ab7ae30"
+            ]
+        ]
+    },
+    {
+        "id": "4da2d8581ab7ae30",
+        "type": "function",
+        "z": "programatic flow",
+        "g": "d741d558b502f072",
+        "name": "Check and fetch data",
+        "func": "const id = msg.req.params.id;\nconst ready_request_name = \"ready_\" + id\nconst waiting_request_name = \"waiting_\" + id\nconst request = flow.get(ready_request_name) || false;\n\nif (!request) {\n  // The data is still being processed\n  if ((flow.get(waiting_request_name) || false)) {\n    msg.statusCode = 202;\n    msg.payload = {\n      status: \"pending\",\n      message:\n        \"The requested data has not yet been received. Please poll again later.\",\n    };\n    return msg;\n  }\n\n  // No job or data with that ID\n  msg.statusCode = 404;\n  msg.payload = {\n    status: \"error\",\n    error: {\n      code: \"not_found\",\n      message: \"No data found for ID: \" + id,\n    },\n  };\n  return msg;\n}\n\n// Data is ready\nflow.set(ready_request_name, null);\nmsg.statusCode = request.statusCode;\nmsg.payload = request.payload;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 1500,
+        "wires": [
+            [
+                "6185d38af57c802b"
+            ]
+        ]
+    },
+    {
+        "id": "6185d38af57c802b",
+        "type": "http response",
+        "z": "programatic flow",
+        "g": "d741d558b502f072",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 535,
+        "y": 1500,
+        "wires": [],
+        "l": false
+    },
+    {
+        "id": "7c4021b1e56562a0",
+        "type": "function",
+        "z": "programatic flow",
+        "g": "1afe2d9608d31bce",
+        "name": "MQTT in",
+        "func": "const { host, topic, username, password, timeout, qos = 0 } = msg.payload || {};\nconst id = msg.id;\n\nconst waitingRequestName = \"waiting_\" + id;\nconst readyRequestName = \"ready_\" + id;\n\nconst options = {\n    clientId: \"nodered-sub-\" + Math.random().toString(16).substr(2, 8),\n    username,\n    password,\n    clean: true,\n    reconnectPeriod: 0,\n    connectTimeout: 5000,\n};\n\n// --- State ---\nlet done = false;\nconst client = mqtt.connect(host, options);\n\n// --- Helper: unified cleanup ---\nfunction finish(statusCode, data = {}) {\n    if (done) return;\n    done = true;\n\n    clearTimeout(timer);\n    client.end(true);\n\n    node.send({\n        payload: data,\n        statusCode: statusCode,\n        id: id,\n    });\n\n    if (statusCode >= 400) {\n        node.error(data.message || \"Unknown failure\");\n    }\n}\n\n// --- Timeout Fallback ---\nconst timer = setTimeout(() => {\n    finish(408, { message: \"Timeout waiting for message\" });\n    node.warn(`Timeout waiting for message on ${topic}`);\n}, timeout);\n\n// --- On Connect ---\nclient.on(\"connect\", () => {\n    client.subscribe(topic, { qos }, (err) => {\n        if (err) {\n            finish(400, { message: `Subscribe error: ${err.message}` });\n        }\n    });\n});\n\n// --- On Message ---\nclient.on(\"message\", (t, message) => {\n    finish(200, {\n        topic: t,\n        payload: message.toString(),\n        host,\n        timestamp: new Date().toISOString(),\n    });\n\n    node.log(`Saved message for ${id} from ${topic}`);\n});\n\n// --- On Error ---\nclient.on(\"error\", (err) => {\n    finish(400, { message: `MQTT connection error: ${err.message}` });\n});\n\nreturn; // No output; event-driven async\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "mqtt",
+                "module": "mqtt"
+            }
+        ],
+        "x": 1080,
+        "y": 1040,
+        "wires": [
+            [
+                "d768b3dad53ada02"
+            ]
+        ]
+    },
+    {
+        "id": "2878fc7db489ccfc",
+        "type": "http response",
+        "z": "programatic flow",
+        "g": "1afe2d9608d31bce",
+        "name": "HTTP Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 1100,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "da83cab6be4c8a1e",
+        "type": "function",
+        "z": "programatic flow",
+        "g": "1afe2d9608d31bce",
+        "name": "Validate MQTT in",
+        "func": "node.log(\"MQTT in selected.\")\nconst id = msg._msgid\n\nlet httpResponse = {\n    id: id,\n    req: msg.req,\n    res: msg.res,\n}\n\n\nconst required = [\n    \"host\",\n    \"topic\",\n    \"timeout\",\n];\n\nlet missing = [];\nrequired.forEach(key => {\n    if (msg.payload == null || msg.payload[key] === undefined) {\n        missing.push(key);\n    }\n});\n\nif (missing.length > 0) {\n    let error_msg = \"Missing required payload fields: \" + missing.join(\", \")\n    node.error(error_msg);\n    httpResponse.statusCode = 400;\n    httpResponse.payload = {\n        status: \"error\",\n        error: {\n            code: \"bad_request\",\n            message: error_msg,\n        },\n    };\n    return [null, httpResponse];\n}\n\n\nflow.set(\"waiting_\" + id, msg.payload)\n\nmsg.id = id;\n\nhttpResponse.statusCode = 200;\nhttpResponse.payload = id\n\nreturn [msg, httpResponse];\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 873.0000076293945,
+        "y": 1067.9999771118164,
+        "wires": [
+            [
+                "7c4021b1e56562a0"
+            ],
+            [
+                "2878fc7db489ccfc"
+            ]
+        ]
+    },
+    {
+        "id": "8d9f274637b26723",
+        "type": "function",
+        "z": "programatic flow",
+        "g": "3c9ed1c17d843820",
+        "name": "Validate and format HTTP",
+        "func": "node.log(\"HTTP out selected.\")\n\nconst required = [\n    \"url\",\n    \"method\",\n    \"headers\",\n    \"requestTimeout\",\n    \"payload\"\n];\n\nlet missing = [];\nrequired.forEach(key => {\n    if (msg.payload == null || msg.payload[key] === undefined) {\n        missing.push(key);\n    }\n});\n\nif (missing.length > 0) {\n    let error_msg = \"Missing required payload fields: \" + missing.join(\", \")\n    node.error(error_msg);\n    msg.statusCode = 400;\n    msg.payload = {\n        status: \"error\",\n        error: {\n            code: \"bad_request\",\n            message: error_msg,\n        },\n    };\n    return [null, msg];\n}\n\nmsg.__original_payload = RED.util.cloneMessage(msg.payload);\nmsg.url = RED.util.cloneMessage(msg.payload.url);\nmsg.method = RED.util.cloneMessage(msg.payload.method);\nmsg.headers = RED.util.cloneMessage(msg.payload.headers);\nmsg.requestTimeout = RED.util.cloneMessage(msg.payload.requestTimeout);\nmsg.payload = RED.util.cloneMessage(msg.payload.payload);\n\nreturn [msg, null];",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 767.9999160766602,
+        "y": 152.99999618530273,
+        "wires": [
+            [
+                "326904422d82ce51"
+            ],
+            [
+                "http-out"
+            ]
+        ]
+    },
+    {
+        "id": "986360c528123cf5",
+        "type": "function",
+        "z": "programatic flow",
+        "g": "cd36554dbf670106",
+        "name": "Validate and format MQTT",
+        "func": "node.log(\"MQTT out selected.\")\n\nconst required = [\n    \"host\",\n    \"topic\",\n    \"timeout\",\n    \"message\"\n];\n\nlet missing = [];\nrequired.forEach(key => {\n    if (msg.payload == null || msg.payload[key] === undefined) {\n        missing.push(key);\n    }\n});\n\nif (missing.length > 0) {\n    let error_msg = \"Missing required payload fields: \" + missing.join(\", \")\n    node.error(error_msg);\n    msg.statusCode = 400;\n    msg.payload = {\n        status: \"error\",\n        error: {\n            code: \"bad_request\",\n            message: error_msg,\n        },\n    };\n    return [null, msg];\n}\nreturn [msg, null];\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 777.9999160766602,
+        "y": 280.00000190734863,
+        "wires": [
+            [
+                "8fdc533f0233c380"
+            ],
+            [
+                "a361d6d25dfc305d"
+            ]
+        ]
+    },
+    {
+        "id": "30a37423202dcafd",
+        "type": "function",
+        "z": "programatic flow",
+        "g": "3c9ed1c17d843820",
+        "name": "Format HTTP response",
+        "func": "msg.response_payload = RED.util.cloneMessage(msg.payload);\nmsg.payload = {};\nmsg.payload.data = RED.util.cloneMessage(msg.response_payload);\nmsg.payload.status = RED.util.cloneMessage(msg.statusCode);\nmsg.response = msg.response || {};\nmsg.response.headers = RED.util.cloneMessage(msg.headers);\nmsg.payload.url = RED.util.cloneMessage(msg.responseUrl);\nmsg.payload.cookies = RED.util.cloneMessage(msg.responseCookies);\nmsg.payload.redirects = RED.util.cloneMessage(msg.redirectList);\n\nmsg.statusCode = 200;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1207.9999160766602,
+        "y": 132.99999618530273,
+        "wires": [
+            [
+                "http-out"
+            ]
+        ]
+    },
+    {
+        "id": "ba99237a21e2a373",
+        "type": "function",
+        "z": "programatic flow",
+        "g": "0ccdbf8e2a254b6d",
+        "name": "Validate and format MQTT",
+        "func": "node.log(\"SMTP out selected.\")\n\nconst required = [\n    \"from\",\n    \"to\",\n    \"subject\",\n    \"text\",\n    \"smtp\"\n];\n\nlet missing = [];\nrequired.forEach(key => {\n    if (msg.payload == null || msg.payload[key] === undefined) {\n        missing.push(key);\n    }\n});\n\nif (missing.length > 0) {\n    let error_msg = \"Missing required payload fields: \" + missing.join(\", \")\n    node.error(error_msg);\n    msg.statusCode = 400;\n    msg.payload = {\n        status: \"error\",\n        error: {\n            code: \"bad_request\",\n            message: error_msg,\n        },\n    };\n    return [null, msg];\n}\n\nmsg.from = RED.util.cloneMessage(msg.payload.from);\nmsg.to = RED.util.cloneMessage(msg.payload.to);\nmsg.subject = RED.util.cloneMessage(msg.payload.subject);\nmsg.text = RED.util.cloneMessage(msg.payload.text);\nmsg.smtp = RED.util.cloneMessage(msg.payload.smtp);\n\nreturn [msg, null];\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 777.9999160766602,
+        "y": 412.99999618530273,
+        "wires": [
+            [
+                "21e185dded19e0ef"
+            ],
+            [
+                "b41a1ca01fcb7507"
+            ]
+        ]
+    },
+    {
+        "id": "bf4c9a9dcf3384d4",
+        "type": "function",
+        "z": "programatic flow",
+        "g": "caf605331b1302b3",
+        "name": "IMAP in",
+        "func": "const { host, username, password, timeout, port } = msg.payload || {}\nconst id = msg._msgid;\n\nlet timeoutId;\n\n// === helper: finish job ===\nfunction finish(statusCode, payload) {\n    clearTimeout(timeoutId);\n    flow.set(\"waiting_\" + id, null)\n    flow.set(\"ready_\" + id, payload)\n\n    node.send({ payload: payload, statusCode: statusCode })\n    node.done();\n}\n\n// === helper: start timeout ===\ntimeoutId = setTimeout(() => {\n    let error_msg = \"Timeout waiting for message: \" + id\n    node.error(error_msg);\n\n    finish(408, {\n        status: \"error\",\n        error: {\n            code: \"bad_request\",\n            message: error_msg,\n        },\n    });\n}, timeout);\n\n\nconst imap = new Imap({\n    user: username,\n    password: password,\n    host: host,\n    port: port || 993,\n    tls: true,\n    keepalive: false\n});\n\nimap.once(\"ready\", () => {\n    imap.openBox(\"INBOX\", false, (err, box) => {\n        if (err) return finish(400, {\n            status: \"error\",\n            error: {\n                code: \"bad_request\",\n                message: err.message,\n            },\n        });\n\n        // Listen for new email\n        imap.on(\"mail\", () => {\n            // Fetch the newest message\n            const f = imap.seq.fetch(box.messages.total + \":*\", { bodies: \"\" });\n\n            f.on(\"message\", (msgObj) => {\n                let buf = \"\";\n                msgObj.on(\"body\", stream => {\n                    stream.on(\"data\", chunk => (buf += chunk.toString()));\n                });\n\n                msgObj.once(\"end\", async () => {\n                    let parsed = await simpleParser(buf);\n                    imap.end();\n                    finish(200, parsed);\n                });\n            });\n        });\n    });\n});\n\nimap.once(\"error\", err => finish(400, { error: err.message }));\nimap.once(\"end\", () => { });\nimap.connect();\n\nreturn;  // stop function here\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "simpleParser",
+                "module": "simple-parser"
+            },
+            {
+                "var": "Imap",
+                "module": "imap"
+            }
+        ],
+        "x": 1100,
+        "y": 1200,
+        "wires": [
+            [
+                "d768b3dad53ada02"
+            ]
+        ]
+    },
+    {
+        "id": "d12299c79c4bf186",
+        "type": "http response",
+        "z": "programatic flow",
+        "g": "caf605331b1302b3",
+        "name": "HTTP Response",
+        "statusCode": "",
+        "headers": {},
+        "x": 1100,
+        "y": 1260,
+        "wires": []
+    },
+    {
+        "id": "3bfd9e5b0930e3fc",
+        "type": "function",
+        "z": "programatic flow",
+        "g": "caf605331b1302b3",
+        "name": "Validate and format IMAP",
+        "func": "node.log(\"IMAP in selected.\")\nconst id = msg._msgid;\n\nconst required = [\n    \"host\",\n    \"emailUsername\",\n    \"emailPassword\",\n    \"timeout\",\n];\n\nlet missing = [];\nrequired.forEach(key => {\n    if (msg.payload == null || msg.payload[key] === undefined) {\n        missing.push(key);\n    }\n});\n\nif (missing.length > 0) {\n    let error_msg = \"Missing required payload fields: \" + missing.join(\", \")\n    node.error(error_msg);\n    msg.statusCode = 400;\n    msg.payload = {\n        status: \"error\",\n        error: {\n            code: \"bad_request\",\n            message: error_msg,\n        },\n    };\n    return [null, msg];\n}\n\nflow.set(\"waiting_\" + id, msg.payload)\n\nmsg.id = id;\n\nreturn [msg, {\n    statusCode: 200,\n    payload: id,\n}];\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 1240,
+        "wires": [
+            [
+                "bf4c9a9dcf3384d4"
+            ],
+            [
+                "d12299c79c4bf186"
+            ]
+        ]
+    },
+    {
+        "id": "d768b3dad53ada02",
+        "type": "function",
+        "z": "programatic flow",
+        "g": "d741d558b502f072",
+        "name": "Save Response with Timeout",
+        "func": "const id = msg.id;\nconst waiting_request_name = \"waiting_\" + id\nconst ready_request_name = \"ready_\" + id\n\nlet request = flow.get(waiting_request_name) || false\n\nif (!request) {\n  node.error(\"No waiting request found for Id \" + id);\n  return;\n}\n\nflow.set(waiting_request_name, null)\n\nrequest = flow.get(ready_request_name) || false\nif (!!request) {\n  node.error(`Response for id ${id} already exists.`);\n  return;\n}\n\nflow.set(ready_request_name, {\n  payload: msg.payload,\n  statusCode: msg.statusCode,\n})\n\n\n// --- Timeout Fallback ---\nconst timer = setTimeout(() => {\n  flow.set(ready_request_name, null);\n}, 600000);\n\nreturn;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "// Code added here will be run when the\n// node is being stopped or re-deployed.\nlet keys = flow.keys()",
+        "libs": [],
+        "x": 1920,
+        "y": 1180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c1162a59df13061b",
+        "type": "debug",
+        "z": "programatic flow",
+        "g": "2e2a5a4fd734ce05",
+        "name": "post input",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 290,
+        "y": 460,
+        "wires": []
+    }
+]

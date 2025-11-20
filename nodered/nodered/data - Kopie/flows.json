@@ -1,0 +1,119 @@
+[
+    {
+        "id": "programatic flow",
+        "type": "tab",
+        "label": "Flow created using API",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "mosquitto-broker",
+        "type": "mqtt-broker",
+        "z": "programatic flow",
+        "name": "Mosquitto broker",
+        "broker": "tcp://mosquitto:1883",
+        "port": 1883,
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "http-in",
+        "type": "http in",
+        "z": "programatic flow",
+        "name": "Receive Data",
+        "url": "/input",
+        "method": "post",
+        "x": 100,
+        "y": 100,
+        "wires": [
+            [
+                "relay",
+                "http-out"
+            ]
+        ]
+    },
+    {
+        "id": "relay",
+        "type": "function",
+        "z": "programatic flow",
+        "name": "Relay",
+        "func": "msg.from = \"sender@example.com\";return msg;",
+        "outputs": 1,
+        "x": 300,
+        "y": 100,
+        "wires": [
+            [
+                "mqtt",
+                "rest",
+                "email"
+            ]
+        ]
+    },
+    {
+        "id": "http-out",
+        "type": "http response",
+        "z": "programatic flow",
+        "name": "HTTP Response",
+        "x": 500,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "mqtt",
+        "type": "mqtt out",
+        "z": "programatic flow",
+        "name": "To MQTT",
+        "topic": "test/programatic",
+        "qos": "0",
+        "broker": "mosquitto-broker",
+        "x": 500,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "rest",
+        "type": "http request",
+        "z": "programatic flow",
+        "name": "To REST API",
+        "method": "POST",
+        "url": "http://172.17.0.1:8888",
+        "x": 470,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "email",
+        "type": "e-mail",
+        "z": "programatic flow",
+        "server": "172.17.0.3",
+        "port": 1025,
+        "authtype": "NONE",
+        "secure": false,
+        "tls": false,
+        "name": "joacortez@outlook.com",
+        "x": 470,
+        "y": 300,
+        "wires": []
+    }
+]

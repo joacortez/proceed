@@ -1,0 +1,9 @@
+{
+    "imap": {
+        "spec": "imap",
+        "module": "imap",
+        "subpath": "",
+        "builtin": false,
+        "known": false
+    }
+}
