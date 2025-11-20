@@ -27,7 +27,7 @@ import { useEnvironment } from '@/components/auth-can';
 import { generateServiceTaskFileName } from '@proceed/bpmn-helper';
 import { useCanEdit } from './modeler';
 import { useQuery } from '@tanstack/react-query';
-import { isUserErrorResponse, userError } from '@/lib/user-error';
+import { isUserErrorResponse } from '@/lib/user-error';
 import { wrapServerCall } from '@/lib/wrap-server-call';
 import useProcessVariables from './use-process-variables';
 import ProcessVariableForm from './variable-definition/process-variable-form';
@@ -89,11 +89,10 @@ const ServiceTaskEditor: FC<ServiceTaskEditorProps> = ({
     queryFn: async () => {
       if (!filename) return null;
 
-      // NOTE change to discrete service task function?
       const configData = await getProcessScriptTaskData(
         processId,
         filename,
-        'ts',
+        'js',
         environment.spaceId,
       );
 
@@ -249,14 +248,6 @@ try {
   };
 
   const handleSave = async () => {
-    console.log('handleSave called', {
-      saving,
-      modeler: !!modeler,
-      filename,
-      selectedElement: !!selectedElement,
-      selectedProtocolConfig: !!selectedProtocolConfig,
-    });
-
     if (saving || !modeler || !filename || !selectedElement || !selectedProtocolConfig) return;
 
     try {
@@ -278,11 +269,10 @@ try {
       await wrapServerCall({
         fn: async () => {
           const responses = await Promise.all([
-            // NOTE change to discrete Service task function??
             saveProcessScriptTask(
               processId,
               filename,
-              'ts',
+              'xml',
               JSON.stringify(config, null, 2),
               environment.spaceId,
             ),

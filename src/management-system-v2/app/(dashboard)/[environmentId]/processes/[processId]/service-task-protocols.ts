@@ -1,4 +1,3 @@
-// Protocol definitions and field configurations
 export interface ProtocolField {
   name: string;
   type:
@@ -14,7 +13,7 @@ export interface ProtocolField {
   label: string;
   placeholder?: string;
   required?: boolean;
-  options?: { label: string; value: string }[]; // For select and radio fields
+  options?: { label: string; value: string }[]; 
   validation?: {
     min?: number;
     max?: number;
@@ -23,7 +22,7 @@ export interface ProtocolField {
   showWhen?: {
     field: string;
     value: string;
-  }; // Conditional field display
+  }; 
 }
 
 export interface ServiceProtocol {
@@ -31,10 +30,9 @@ export interface ServiceProtocol {
   name: string;
   description: string;
   fields: ProtocolField[];
-  supportsModes?: boolean; // Whether this protocol supports send/receive modes
+  supportsModes?: boolean; 
 }
 
-// Define your protocols here
 export const SERVICE_PROTOCOLS: ServiceProtocol[] = [
   {
     id: 'http',
@@ -52,7 +50,6 @@ export const SERVICE_PROTOCOLS: ServiceProtocol[] = [
           { label: 'Receive/Listen', value: 'receive' },
         ],
       },
-      // Send mode fields
       {
         name: 'url',
         type: 'url',
@@ -71,7 +68,7 @@ export const SERVICE_PROTOCOLS: ServiceProtocol[] = [
           { label: 'POST', value: 'POST' },
           { label: 'PUT', value: 'PUT' },
           { label: 'DELETE', value: 'DELETE' },
-          { label: 'PATCH', value: 'PATCH' },
+          { label: 'HEAD', value: 'HEAD' },
         ],
         showWhen: { field: 'mode', value: 'send' },
       },
@@ -97,7 +94,7 @@ export const SERVICE_PROTOCOLS: ServiceProtocol[] = [
         validation: { min: 100, max: 60000 },
         showWhen: { field: 'mode', value: 'send' },
       },
-      // Receive mode fields
+      
       {
         name: 'listenPort',
         type: 'number',
@@ -116,13 +113,12 @@ export const SERVICE_PROTOCOLS: ServiceProtocol[] = [
         showWhen: { field: 'mode', value: 'receive' },
       },
       {
-        name: 'allowedMethods',
+        name: 'method',
         type: 'select',
-        label: 'Allowed Methods',
+        label: 'Method',
+        required: true,
         options: [
-          { label: 'POST only', value: 'POST' },
-          { label: 'GET only', value: 'GET' },
-          { label: 'Any method', value: 'ANY' },
+          { label: 'GET', value: 'GET' },
         ],
         showWhen: { field: 'mode', value: 'receive' },
       },
@@ -151,7 +147,7 @@ export const SERVICE_PROTOCOLS: ServiceProtocol[] = [
           { label: 'Receive/Monitor', value: 'receive' },
         ],
       },
-      // Send mode fields
+      
       {
         name: 'to',
         type: 'email',
@@ -213,7 +209,7 @@ export const SERVICE_PROTOCOLS: ServiceProtocol[] = [
         placeholder: 'App password or email password',
         showWhen: { field: 'mode', value: 'send' },
       },
-      // Receive mode fields
+      
       {
         name: 'imapHost',
         type: 'text',
@@ -289,7 +285,6 @@ export const SERVICE_PROTOCOLS: ServiceProtocol[] = [
           { label: 'Subscribe', value: 'receive' },
         ],
       },
-      // Common fields for both modes
       {
         name: 'brokerUrl',
         type: 'text',
@@ -339,7 +334,6 @@ export const SERVICE_PROTOCOLS: ServiceProtocol[] = [
           max: 30000,
         },
       },
-      // Send/Publish mode fields
       {
         name: 'message',
         type: 'textarea',
@@ -369,7 +363,6 @@ export const SERVICE_PROTOCOLS: ServiceProtocol[] = [
         ],
         showWhen: { field: 'mode', value: 'send' },
       },
-      // Receive/Subscribe mode fields
       {
         name: 'subscribeQos',
         type: 'select',
